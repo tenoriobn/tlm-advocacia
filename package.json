@@ -1,5 +1,7 @@
 {
-  "name": "10-tlm-advocacia",
+  "name": "tlm-advocacia",
+  "description": "Atendimento jurídico estratégico para resolver seu problema com rapidez e segurança. Fale com um advogado agora.",
+  "author": "Bruno Tenório",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,6 +16,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
