@@ -1,6 +1,9 @@
 "use client";
 import Header from "src/components/Header";
 import HeroSection from "./HeroSection";
+import AboutTLMAdvocacia from "./AboutTLMAdvocacia";
+import AboutLawyer from "./AboutLawyer";
+import ServicesSection from "./ServicesSection";
 
 export default function HomePage() {
   return (
@@ -13,6 +16,9 @@ export default function HomePage() {
         className="flex flex-1 flex-col items-center justify-between w-full"
       >
         <HeroSection />
+        <AboutTLMAdvocacia />
+        <AboutLawyer />
+        <ServicesSection />
       </main>
     </>
   );
