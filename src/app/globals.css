@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-roboto: var(--font-roboto);
+  --font-playfair: var(--font-playfair);
+
+  --color-primary: #272626;
+  --color-primary-75: rgb(39 38 38 / 75%);
+  --color-primary-25: rgb(39 38 38 / 25%);
+  --color-primary-dark: #222121;
+  --color-secondary: #e1e0e0;
+  --color-secondary-75: rgb(225 224 224 / 75%);
+  --color-secondary-50: rgb(225 224 224 / 50%);
+
+  --color-blue: #3a5c86;
+  --color-blue-dark: #152e50;
+  --color-blue-light: #7ca5d8;
+  --color-gray: #4e4e4e;
+  --color-gray-light: #c5c5c5;
+  --color-red: #c81919;
+  --color-red-dark: #602a28;
+  --color-red-light: #d97a77;
+  --color-yellow-dark: #483a0f;
+  --color-yellow: #ce9e40;
+  --color-green-dark: #1b4614;
+  --color-green: #7ab948;
+
+  --background-image-gradient-primary: linear-gradient(
+    180deg,
+    rgba(39, 38, 38, 1) 11%,
+    rgba(39, 38, 38, 0.85) 23%,
+    rgba(39, 38, 38, 0.01) 68%,
+    rgba(39, 38, 38, 1) 91%
+  );
+
+  --background-image-header:
+    var(--background-image-gradient-primary), url("/images/herosection-bg.png");
+
+  --background-image-gradient-primary-5deg: linear-gradient(
+    -5deg,
+    rgba(225, 224, 224, 1) 67%,
+    rgba(39, 38, 38, 1) 67%
+  );
+
+  --background-image-gradient-primary-172deg: linear-gradient(
+    172deg,
+    rgba(225, 224, 224, 1) 50%,
+    rgba(39, 38, 38, 1) 50%
+  );
+
+  --breakpoint-xs: 23.4375rem;
+}
+
+@layer utilities {
+  .transition-default {
+    @apply transition duration-300 ease-in-out;
+  }
+}

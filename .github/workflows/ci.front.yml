@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -42,6 +46,7 @@ jobs:
       - name: Comentar Preview no PR
         uses: marocchino/sticky-pull-request-comment@v2
         with:
+          recreate: true
           message: |
             🚀 **Preview Deployment**
 
