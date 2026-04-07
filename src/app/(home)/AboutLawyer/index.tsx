@@ -21,7 +21,7 @@ export default function AboutLawyer() {
           />
 
           <SectionSubtitle
-            id="about-tlm-title"
+            id="about-lawyer-title"
             className="text-primary mb-12 max-xl:text-center"
           >
             Experiência para <br /> decisões seguras

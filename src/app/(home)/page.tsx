@@ -3,6 +3,7 @@ import Header from "src/components/Header";
 import HeroSection from "./HeroSection";
 import AboutTLMAdvocacia from "./AboutTLMAdvocacia";
 import AboutLawyer from "./AboutLawyer";
+import ServicesSection from "./ServicesSection";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <HeroSection />
         <AboutTLMAdvocacia />
         <AboutLawyer />
+        <ServicesSection />
       </main>
     </>
   );
