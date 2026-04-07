@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import AboutTLMAdvocacia from "./AboutTLMAdvocacia";
 import AboutLawyer from "./AboutLawyer";
 import ServicesSection from "./ServicesSection";
+import LegalAdvice from "./LegalAdvice";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
         <AboutTLMAdvocacia />
         <AboutLawyer />
         <ServicesSection />
+        <LegalAdvice />
       </main>
     </>
   );
