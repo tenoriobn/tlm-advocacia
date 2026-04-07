@@ -1,8 +1,4 @@
-type SectionEyebrowProps = {
-  text: string;
-  className?: string;
-  lineClassName?: string;
-};
+import type { SectionEyebrowProps } from "./sectionEyebrow.type";
 
 export default function SectionEyebrow({
   text,
