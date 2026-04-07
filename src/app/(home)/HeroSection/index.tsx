@@ -51,7 +51,7 @@ export default function HeroSection() {
             alt="Foto do advogado Thiago Lopes Martinez"
             width={64}
             height={64}
-            className="bg-primary-dark rounded-full object-fill w-16 h-16 scale-x-[-1]"
+            className="bg-primary-dark rounded-full object-contain w-16 h-16 scale-x-[-1]"
           />
 
           <div>

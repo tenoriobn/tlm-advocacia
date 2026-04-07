@@ -86,7 +86,7 @@ export default function Accordion() {
           <article
             key={id}
             onClick={() => toggleItem(id)}
-            className={`border-b border-primary-25 max-xs:p-4 xs:p-6 cursor-pointer ${isOpen ? "bg-primary rounded-sm" : ""}`}
+            className={`border-b border-primary-25 last:border-b-0 max-xs:p-4 xs:p-6 cursor-pointer ${isOpen ? "bg-primary rounded-sm" : ""}`}
           >
             <button
               id={buttonId}
