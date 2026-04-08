@@ -26,7 +26,7 @@ export default function CarouselTestimonials() {
       {TESTIMONIALS_CARDS.map(({ id, avatar, name, testimony }) => (
         <SwiperSlide key={id}>
           <article
-            className="bg-primary max-xs:p-4 xs:p-6 rounded-sm w-full flex flex-col h-full"
+            className="bg-primary-dark max-xs:p-4 xs:p-6 rounded-sm w-full flex flex-col h-full"
             aria-labelledby={`testimonial-${id}-name`}
             aria-describedby={`testimonial-${id}-text`}
           >

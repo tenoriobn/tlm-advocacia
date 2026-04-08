@@ -6,6 +6,8 @@ import AboutLawyer from "./AboutLawyer";
 import ServicesSection from "./ServicesSection";
 import LegalAdvice from "./LegalAdvice";
 import Testimonials from "./Testimonials";
+import Contacts from "./Contacts";
+import Footer from "src/components/Footer";
 
 export default function HomePage() {
   return (
@@ -23,7 +25,10 @@ export default function HomePage() {
         <ServicesSection />
         <LegalAdvice />
         <Testimonials />
+        <Contacts />
       </main>
+
+      <Footer />
     </>
   );
 }
