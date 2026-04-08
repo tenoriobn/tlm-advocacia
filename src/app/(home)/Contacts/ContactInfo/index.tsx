@@ -36,7 +36,7 @@ export default function ContactInfo() {
             role="region"
             aria-label={title}
             onClick={() => isClickable && handleClick({ href, description })}
-            className={`grid grid-cols-[auto_1fr] gap-3 items-center ${isClickable ? "cursor-pointer hover:bg-primary/10" : ""}`}
+            className={`grid grid-cols-[auto_1fr] gap-3 items-center max-w-max ${isClickable ? "cursor-pointer hover:bg-primary/10" : ""}`}
           >
             <button
               type="button"

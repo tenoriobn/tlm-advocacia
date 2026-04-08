@@ -56,6 +56,43 @@
 }
 
 @layer utilities {
+  @keyframes enable-scroll {
+    to {
+      overflow-y: auto;
+    }
+  }
+
+  .animate-enable-scroll {
+    animation: enable-scroll 0s forwards;
+    animation-delay: 0.3s;
+  }
+
+  .dropdown-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .dropdown-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-secondary-25);
+  }
+
+  .dropdown-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-secondary-50);
+  }
+}
+
+@layer base {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-secondary) !important;
+    caret-color: var(--color-secondary) !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+@layer utilities {
   .transition-default {
     @apply transition duration-300 ease-in-out;
   }
