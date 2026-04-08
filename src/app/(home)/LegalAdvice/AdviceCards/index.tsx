@@ -19,8 +19,8 @@ export default function AdviceCards() {
               "grid grid-rows-subgrid row-span-3 max-xs:p-4 xs:p-6 border-primary-25",
               isFirst &&
                 "bg-primary rounded-tl-sm rounded-tr-sm rounded-bl-sm rounded-br-none",
-              !isLast && "border-b",
-              !isLastTwo && "md:border-b",
+              !isLast && "max-md:border-b",
+              !isLastTwo && "md:max-lg:border-b",
               !isEven && "md:max-lg:border-r",
               isTopRow && "lg:border-b",
               !isThirdCol && "lg:border-r",

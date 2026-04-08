@@ -5,6 +5,7 @@ import AboutTLMAdvocacia from "./AboutTLMAdvocacia";
 import AboutLawyer from "./AboutLawyer";
 import ServicesSection from "./ServicesSection";
 import LegalAdvice from "./LegalAdvice";
+import Testimonials from "./Testimonials";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
         <AboutLawyer />
         <ServicesSection />
         <LegalAdvice />
+        <Testimonials />
       </main>
     </>
   );
