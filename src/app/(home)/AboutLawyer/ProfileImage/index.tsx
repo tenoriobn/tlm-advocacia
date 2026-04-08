@@ -3,7 +3,7 @@ import type { ProfileImageProps } from "./profileImage.type";
 
 export default function ProfileImage({ mobile = false }: ProfileImageProps) {
   return (
-    <div
+    <figure
       className={
         mobile
           ? "xl:hidden relative w-full mb-12"
@@ -27,6 +27,6 @@ export default function ProfileImage({ mobile = false }: ProfileImageProps) {
           className="object-contain object-bottom"
         />
       </div>
-    </div>
+    </figure>
   );
 }

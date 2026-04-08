@@ -1,6 +1,9 @@
 export default function Description() {
   return (
-    <div className="space-y-4 text-lg md:text-xl text-primary-75 max-xl:text-center lg:flex-1 min-w-0 mb-12 lg:mb-18">
+    <div
+      aria-label="Descrição profissional do advogado"
+      className="space-y-4 text-lg md:text-xl text-primary-75 max-xl:text-center lg:flex-1 min-w-0 mb-12 lg:mb-18"
+    >
       <p>
         Advogado com mais de 20 anos de experiência, atuando na defesa dos
         direitos de seus clientes com visão prática e estratégica.
