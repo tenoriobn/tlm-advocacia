@@ -15,17 +15,19 @@ export default function AboutLawyer() {
         <ProfileImage />
 
         <div className="flex flex-col max-xl:items-center">
-          <SectionEyebrow
-            text="SOBRE THIAGO L. MARTINEZ"
-            className="text-primary-75"
-          />
+          <header>
+            <SectionEyebrow
+              text="SOBRE THIAGO L. MARTINEZ"
+              className="text-primary-75"
+            />
 
-          <SectionSubtitle
-            id="about-lawyer-title"
-            className="text-primary mb-12 max-xl:text-center"
-          >
-            Experiência para <br /> decisões seguras
-          </SectionSubtitle>
+            <SectionSubtitle
+              id="about-lawyer-title"
+              className="text-primary mb-12 max-xl:text-center"
+            >
+              Experiência para <br /> decisões seguras
+            </SectionSubtitle>
+          </header>
 
           <ProfileImage mobile />
 

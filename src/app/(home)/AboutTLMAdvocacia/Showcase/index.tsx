@@ -4,8 +4,11 @@ import WhatsappMinimalistIcon from "public/icons/whatsapp-minimalist.svg";
 
 export default function Showcase() {
   return (
-    <div className="lg:flex gap-18">
-      <div className="hidden lg:block relative w-full min-h-[418px] rounded-sm overflow-hidden lg:flex-[1.25] ">
+    <section
+      aria-label="Demonstração visual dos serviços jurídicos"
+      className="lg:flex gap-18"
+    >
+      <figure className="hidden lg:block relative w-full min-h-[418px] rounded-sm overflow-hidden lg:flex-[1.25]">
         <Image
           alt="Aperto de mãos simbolizando acordo e confiança no atendimento jurídico"
           src="/images/aperto-de-maos.jpg"
@@ -13,9 +16,9 @@ export default function Showcase() {
           sizes="(min-width: 1024px) 100vw, 0px"
           className="object-cover"
         />
-      </div>
+      </figure>
 
-      <div className="relative w-full min-h-[418px] rounded-sm overflow-hidden lg:flex-1 min-w-0">
+      <figure className="relative w-full min-h-[418px] rounded-sm overflow-hidden lg:flex-1 min-w-0">
         <Image
           alt="Balança da justiça representando equilíbrio e segurança jurídica"
           src="/images/balanca-justica.jpg"
@@ -26,16 +29,17 @@ export default function Showcase() {
 
         <div className="absolute inset-0 flex items-end justify-center">
           <Link
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5511999403955?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20um%20advogado."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary text-secondary text-xl md:text-2xl font-medium px-6 py-4 flex items-center justify-center gap-3 w-full transition-default hover:bg-neutral-600 active:bg-neutral-500 active:scale-105"
+            aria-label="Consultar advogado pelo WhatsApp (abre em nova aba com mensagem pré-preenchida)"
           >
-            <WhatsappMinimalistIcon aria-hidden="true" />
-            Consultar advogado
+            <WhatsappMinimalistIcon aria-hidden="true" focusable="false" />
+            <span>Consultar advogado</span>
           </Link>
         </div>
-      </div>
-    </div>
+      </figure>
+    </section>
   );
 }

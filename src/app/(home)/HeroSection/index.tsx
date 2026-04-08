@@ -31,19 +31,19 @@ export default function HeroSection() {
           </div>
 
           <Link
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5511999403955?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-secondary text-primary text-xl md:text-2xl font-medium rounded-sm px-6 py-4 flex items-center justify-center gap-3 max-w-max transition-default hover:bg-secondary-75 active:bg-secondary-50 active:scale-90"
             aria-label="Falar com advogado pelo WhatsApp"
           >
-            <WhatsappMinimalistIcon aria-hidden="true" />
-            Falar com advogado
+            <WhatsappMinimalistIcon aria-hidden="true" focusable="false" />
+            <span>Falar com advogado</span>
           </Link>
         </header>
 
-        <aside
-          aria-label="Informações do advogado"
+        <footer
+          aria-labelledby="info-advogado"
           className="flex shrink-0 justify-center items-center gap-3 md:gap-6 border-t border-b border-white/12 py-6"
         >
           <Image
@@ -55,15 +55,20 @@ export default function HeroSection() {
           />
 
           <div>
+            <h2 id="info-advogado" className="sr-only">
+              Informações do advogado
+            </h2>
+
             <p className="text-lg md:text-2xl font-medium text-secondary">
               OAB/SP nº 253.048
               <span className="hidden md:inline"> — registro ativo</span>
             </p>
+
             <p className="text-lg md:text-2xl text-secondary">
               Atendimento sem burocracia
             </p>
           </div>
-        </aside>
+        </footer>
       </div>
     </section>
   );

@@ -1,31 +1,31 @@
 import SectionEyebrow from "src/components/SectionEyebrow";
 import SectionSubtitle from "src/components/SectionSubtitle";
-import AdviceCards from "./AdviceCards";
+import CarouselTestimonials from "./CarouselTestimonials";
 
-export default function LegalAdvice() {
+export default function Testimonials() {
   return (
     <section
-      id="legal-advice"
-      aria-labelledby="legal-advice-title"
+      id="testimonials"
+      aria-labelledby="testimonials-title"
       className="bg-secondary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
       <div className="max-w-[1920px] w-full pt-25 md:pt-32 m-auto">
-        <header>
+        <header className="flex flex-col items-center">
           <SectionEyebrow
-            text="Orientações jurídicas"
+            text="Depoimentos"
             className="text-primary-75 justify-center"
           />
 
           <SectionSubtitle
-            id="legal-advice-title"
+            id="testimonials-title"
             className="text-primary text-center mb-12"
           >
-            Entenda seus direitos <br className="hidden md:block" /> em
-            situações comuns
+            Avaliações de nossos <br className="hidden md:block" /> clientes e
+            parceiros
           </SectionSubtitle>
         </header>
 
-        <AdviceCards />
+        <CarouselTestimonials />
       </div>
     </section>
   );

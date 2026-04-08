@@ -1,6 +1,9 @@
 export default function Description() {
   return (
-    <div className="space-y-4 text-lg md:text-xl text-secondary-75 max-lg:text-center lg:flex-1 min-w-0">
+    <div
+      aria-label="Descrição sobre o escritório"
+      className="space-y-4 text-lg md:text-xl text-secondary-75 max-lg:text-center lg:flex-1 min-w-0"
+    >
       <p>
         A TLM Advocacia atua desde 2016 oferecendo assessoria jurídica focada na
         solução de problemas reais.
