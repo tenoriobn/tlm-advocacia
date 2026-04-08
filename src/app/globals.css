@@ -14,6 +14,7 @@
   --color-secondary: #e1e0e0;
   --color-secondary-75: rgb(225 224 224 / 75%);
   --color-secondary-50: rgb(225 224 224 / 50%);
+  --color-secondary-25: rgb(225 224 224 / 25%);
 
   --color-blue: #3a5c86;
   --color-blue-dark: #152e50;
@@ -46,12 +47,49 @@
   );
 
   --background-image-gradient-primary-172deg: linear-gradient(
-    172deg,
-    rgba(225, 224, 224, 1) 50%,
-    rgba(39, 38, 38, 1) 50%
+    176deg,
+    rgba(225, 224, 224, 1) 70%,
+    rgba(39, 38, 38, 1) 70%
   );
 
   --breakpoint-xs: 23.4375rem;
+}
+
+@layer utilities {
+  @keyframes enable-scroll {
+    to {
+      overflow-y: auto;
+    }
+  }
+
+  .animate-enable-scroll {
+    animation: enable-scroll 0s forwards;
+    animation-delay: 0.3s;
+  }
+
+  .dropdown-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .dropdown-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-secondary-25);
+  }
+
+  .dropdown-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-secondary-50);
+  }
+}
+
+@layer base {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-secondary) !important;
+    caret-color: var(--color-secondary) !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 }
 
 @layer utilities {

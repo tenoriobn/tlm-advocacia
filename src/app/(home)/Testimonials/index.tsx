@@ -7,7 +7,7 @@ export default function Testimonials() {
     <section
       id="testimonials"
       aria-labelledby="testimonials-title"
-      className="bg-secondary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
+      className="bg-gradient-primary-172deg w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
       <div className="max-w-[1920px] w-full pt-25 md:pt-32 m-auto">
         <header className="flex flex-col items-center">
