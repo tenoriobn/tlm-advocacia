@@ -67,7 +67,7 @@ export function DropdownField({
 
             <span
               className={`
-              flex-1 text-left text-xl md:text-2xl transition-default max-xs:truncate max-xs:max-w-[188px]
+              flex-1 text-left text-xl md:text-2xl transition-default max-xs:truncate max-xs:max-w-47
               ${selected || isOpen ? "text-secondary" : "text-secondary-50"}
             `}
             >
@@ -87,7 +87,7 @@ export function DropdownField({
           className={`select-none block absolute left-0 right-0 top-[calc(100%+16px)] z-10 bg-primary-dark rounded-sm divide-y divide-secondary-25/15 transition-[max-height,opacity,border-color] duration-300 ease-in-out dropdown-scrollbar border shadow-xl/15
           ${
             isOpen
-              ? "max-h-[258px] opacity-100 overflow-y-auto border-secondary-25"
+              ? "max-h-64.5 opacity-100 overflow-y-auto border-secondary-25"
               : "max-h-0 opacity-0 border-transparent overflow-hidden"
           }
         `}

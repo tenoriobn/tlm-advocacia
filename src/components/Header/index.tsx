@@ -41,14 +41,14 @@ export default function Header() {
             aria-hidden="true"
             className={`${iconBaseClass} ${menuIconStateClass}`}
           >
-            <MobileMenuIcon aria-hidden="true" />
+            <MobileMenuIcon aria-hidden="true" focusable="false" />
           </span>
 
           <span
             aria-hidden="true"
             className={`${iconBaseClass} ${closeIconStateClass}`}
           >
-            <CloseIcon aria-hidden="true" />
+            <CloseIcon aria-hidden="true" focusable="false" />
           </span>
         </button>
 
