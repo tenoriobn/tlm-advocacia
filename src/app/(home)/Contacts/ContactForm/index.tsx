@@ -17,7 +17,15 @@ export default function ContactForm() {
     useContactForm();
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-6 w-full h-full">
+    <form
+      aria-labelledby="contact-form-title"
+      onSubmit={handleSubmit}
+      className="grid gap-6 w-full h-full"
+    >
+      <h2 id="contact-form-title" className="sr-only">
+        Formulário de contato
+      </h2>
+
       <InputField
         icon={<UserIcon />}
         placeholder="Nome"
@@ -78,9 +86,13 @@ export default function ContactForm() {
         `}
       >
         {isSubmitting ? (
-          <LoadingIcon className="w-6 h-6" />
+          <LoadingIcon
+            className="w-6 h-6"
+            aria-hidden="true"
+            focusable="false"
+          />
         ) : (
-          <PaperAirplaneIcon />
+          <PaperAirplaneIcon aria-hidden="true" focusable="false" />
         )}
         <span>{isSubmitting ? "Enviando Mensagem" : "Enviar Mensagem"}</span>
       </button>

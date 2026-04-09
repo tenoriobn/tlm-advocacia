@@ -1,14 +1,6 @@
 import Link from "next/link";
 import type { NavbarProps } from "./navbar.type";
-
-const MENU_LINKS = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Orientações", href: "#orientacoes" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Contatos", href: "#contatos" },
-] as const;
+import { MENU_LINKS } from "./menuLinks";
 
 export default function Navbar({ isMenuActive }: NavbarProps) {
   const activeHref = MENU_LINKS[0].href;
@@ -16,7 +8,7 @@ export default function Navbar({ isMenuActive }: NavbarProps) {
   return (
     <nav
       id="primary-navigation"
-      aria-label="Navegação principal da landing page"
+      aria-label="Navegação principal"
       className={`
         max-xl:bg-primary-dark max-xl:absolute max-xs:right-4 max-md:right-6 md:right-8 lg:max-xl:right-20 max-xl:top-20 max-xl:w-full max-xl:max-w-52.5 max-xl:rounded-sm xl:block
         max-xl:overflow-hidden max-xl:transition-[min-height,max-height] max-xl:duration-300 max-xl:ease-out

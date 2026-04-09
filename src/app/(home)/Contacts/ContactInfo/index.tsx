@@ -1,9 +1,5 @@
 import { CONTACTS_INFO } from "./contactinfo";
-
-type HandleClickParams = {
-  href: string | null;
-  description: string;
-};
+import type { HandleClickParams } from "./contactInfo.type";
 
 function handleClick({ href, description }: HandleClickParams) {
   if (!href) {
@@ -19,9 +15,9 @@ function handleClick({ href, description }: HandleClickParams) {
 
 export default function ContactInfo() {
   return (
-    <section
+    <address
       aria-labelledby="contact-list-heading"
-      className="grid max-xs:gap-4 xs:gap-6"
+      className="grid max-xs:gap-4 xs:gap-6 not-italic"
     >
       <h2 id="contact-list-heading" className="sr-only">
         Informações de Contato
@@ -33,7 +29,6 @@ export default function ContactInfo() {
         return (
           <article
             key={title}
-            role="region"
             aria-label={title}
             onClick={() => isClickable && handleClick({ href, description })}
             className={`grid grid-cols-[auto_1fr] gap-3 items-center max-w-max ${isClickable ? "cursor-pointer hover:bg-primary/10" : ""}`}
@@ -69,6 +64,6 @@ export default function ContactInfo() {
           </article>
         );
       })}
-    </section>
+    </address>
   );
 }

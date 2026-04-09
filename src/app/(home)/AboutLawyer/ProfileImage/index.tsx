@@ -15,8 +15,8 @@ export default function ProfileImage({ mobile = false }: ProfileImageProps) {
       <div
         className={
           mobile
-            ? "relative w-full aspect-16/10 max-h-[440px] rounded-sm overflow-hidden"
-            : "relative w-full h-full min-h-[420px] rounded-sm overflow-hidden"
+            ? "relative w-full aspect-16/10 max-h-110 rounded-sm overflow-hidden"
+            : "relative w-full h-full min-h-105 rounded-sm overflow-hidden"
         }
       >
         <Image
