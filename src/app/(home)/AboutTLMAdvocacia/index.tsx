@@ -7,7 +7,7 @@ import SectionSubtitle from "src/components/SectionSubtitle";
 export default function AboutTLMAdvocacia() {
   return (
     <section
-      id="sobre-tlm-advocacia"
+      id="sobre"
       aria-labelledby="about-tlm-title"
       className="bg-gradient-primary-5deg w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >

@@ -8,7 +8,7 @@ import Map from "./Map";
 export default function Contacts() {
   return (
     <section
-      id="contacts"
+      id="contatos"
       aria-labelledby="contacts-title"
       className="bg- bg-primary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
