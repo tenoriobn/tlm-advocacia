@@ -7,6 +7,7 @@ export const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500"],
   display: "swap",
+  preload: false,
 });
 
 export const playfairDisplay = Playfair_Display({
@@ -14,7 +15,7 @@ export const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
   weight: ["600"],
   display: "swap",
-  // preload: false,
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -89,9 +90,11 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       suppressHydrationWarning
-      className={`${roboto.variable} ${playfairDisplay.variable} h-full antialiased`}
+      className={`${playfairDisplay.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-roboto">{children}</body>
+      <body className={`${roboto.className} min-h-full flex flex-col`}>
+        {children}
+      </body>
     </html>
   );
 }

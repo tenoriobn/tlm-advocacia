@@ -1,9 +1,5 @@
 import { CONTACTS_INFO } from "./contactinfo";
-
-type HandleClickParams = {
-  href: string | null;
-  description: string;
-};
+import type { HandleClickParams } from "./contactInfo.type";
 
 function handleClick({ href, description }: HandleClickParams) {
   if (!href) {

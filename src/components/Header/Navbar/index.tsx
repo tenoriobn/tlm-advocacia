@@ -1,14 +1,6 @@
 import Link from "next/link";
 import type { NavbarProps } from "./navbar.type";
-
-const MENU_LINKS = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Orientações", href: "#orientacoes" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Contatos", href: "#contatos" },
-] as const;
+import { MENU_LINKS } from "./menuLinks";
 
 export default function Navbar({ isMenuActive }: NavbarProps) {
   const activeHref = MENU_LINKS[0].href;

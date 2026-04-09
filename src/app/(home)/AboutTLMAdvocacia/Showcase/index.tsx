@@ -8,7 +8,7 @@ export default function Showcase() {
       aria-label="Demonstração visual dos serviços jurídicos"
       className="lg:flex gap-18"
     >
-      <figure className="hidden lg:block relative w-full min-h-[418px] rounded-sm overflow-hidden lg:flex-[1.25]">
+      <figure className="hidden lg:block relative w-full min-h-104.5 rounded-sm overflow-hidden lg:flex-[1.25]">
         <Image
           alt="Aperto de mãos simbolizando acordo e confiança no atendimento jurídico"
           src="/images/aperto-de-maos.jpg"
@@ -18,7 +18,7 @@ export default function Showcase() {
         />
       </figure>
 
-      <figure className="relative w-full min-h-[418px] rounded-sm overflow-hidden lg:flex-1 min-w-0">
+      <figure className="relative w-full min-h-104.5 rounded-sm overflow-hidden lg:flex-1 min-w-0">
         <Image
           alt="Balança da justiça representando equilíbrio e segurança jurídica"
           src="/images/balanca-justica.jpg"
