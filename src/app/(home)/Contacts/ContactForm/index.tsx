@@ -77,7 +77,7 @@ export default function ContactForm() {
         disabled={isSubmitting}
         type="submit"
         className={`
-          justify-self-end bg-secondary text-primary text-xl md:text-2xl font-medium rounded-sm max-xs:p-4 xs:px-6 xs:py-4 flex items-center gap-3 max-w-max transition-default 
+          justify-self-end bg-secondary text-primary text-xl md:text-2xl font-medium rounded-sm max-xs:p-4 xs:px-6 xs:py-4 flex items-center justify-center gap-3 max-sm:w-full sm:max-w-max transition-default 
           ${
             isSubmitting
               ? "cursor-not-allowed opacity-50"

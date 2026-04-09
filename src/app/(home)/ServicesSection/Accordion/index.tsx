@@ -41,13 +41,17 @@ export default function Accordion() {
                 onClick={() => toggleItem(id)}
                 aria-expanded={isOpen}
                 aria-controls={panelId}
-                className="absolute inset-0 w-full h-full z-10 cursor-pointer"
+                className="absolute inset-0 w-full h-full z-10 cursor-pointer pointer-events-none focus:pointer-events-auto"
               >
                 <span className="sr-only">{title}</span>
               </button>
             </h3>
 
-            <div className="relative z-0 max-xs:p-4 xs:p-6">
+            <div
+              role="presentation"
+              onClick={() => toggleItem(id)}
+              className="relative z-0 max-xs:p-4 xs:p-6 cursor-pointer"
+            >
               <div
                 className={`
                   w-full flex items-center justify-between gap-3 transition-colors duration-300
@@ -88,7 +92,8 @@ export default function Accordion() {
                     href={whatsappHref}
                     tone="secondary"
                     ariaLabel={`Falar sobre o caso de ${title}`}
-                    className="flex relative z-20"
+                    className="flex relative z-20 pointer-events-auto"
+                    onClick={(event) => event.stopPropagation()}
                   />
                 </div>
               </div>

@@ -9,7 +9,7 @@ export const SOCIAL_LINK = [
   },
   {
     icon: WhatsappIcon,
-    href: "https://wa.me/5511999403955?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica.",
+    href: "https://wa.me/5511999403955?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20TLM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras.",
     ariaLabel: "Falar com advogado pelo WhatsApp",
   },
 ];
