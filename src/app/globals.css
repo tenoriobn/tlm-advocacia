@@ -56,6 +56,41 @@
   --breakpoint-sm: 26.5625rem;
 }
 
+@layer base {
+  /* Chrome, Edge, Safari */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-neutral-700);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-secondary-75);
+    border-radius: 0.25rem;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-secondary-75) var(--color-neutral-700);
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-secondary) !important;
+    caret-color: var(--color-secondary) !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
 @layer utilities {
   @keyframes enable-scroll {
     to {
@@ -79,17 +114,10 @@
   .dropdown-scrollbar::-webkit-scrollbar-thumb {
     background: var(--color-secondary-50);
   }
-}
 
-@layer base {
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  select:-webkit-autofill {
-    -webkit-text-fill-color: var(--color-secondary) !important;
-    caret-color: var(--color-secondary) !important;
-    transition: background-color 5000s ease-in-out 0s;
+  .dropdown-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-secondary-50) var(--color-secondary-25);
   }
 }
 
