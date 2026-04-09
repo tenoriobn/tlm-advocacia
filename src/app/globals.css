@@ -53,6 +53,7 @@
   );
 
   --breakpoint-xs: 23.4375rem;
+  --breakpoint-sm: 26.5625rem;
 }
 
 @layer utilities {
