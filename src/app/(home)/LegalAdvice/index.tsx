@@ -5,7 +5,7 @@ import AdviceCards from "./AdviceCards";
 export default function LegalAdvice() {
   return (
     <section
-      id="legal-advice"
+      id="orientacoes"
       aria-labelledby="legal-advice-title"
       className="bg-secondary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >

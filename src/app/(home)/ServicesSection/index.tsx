@@ -7,7 +7,7 @@ import Accordion from "./Accordion";
 export default function ServicesSection() {
   return (
     <section
-      id="tlm-services"
+      id="servicos"
       aria-labelledby="tlm-services-title"
       aria-describedby="tlm-services-description"
       className="bg-secondary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"

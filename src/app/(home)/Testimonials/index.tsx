@@ -5,7 +5,7 @@ import CarouselTestimonials from "./CarouselTestimonials";
 export default function Testimonials() {
   return (
     <section
-      id="testimonials"
+      id="depoimentos"
       aria-labelledby="testimonials-title"
       className="bg-gradient-primary-172deg w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
