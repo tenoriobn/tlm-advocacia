@@ -30,15 +30,15 @@ export default function Navbar({ isMenuActive, setIsMenuActive }: NavbarProps) {
         className={`
           hidden 
           xl:flex xl:items-center xl:justify-center
-          max-xl:fixed max-xl:top-0 max-xl:left-0 max-xl:h-dvh
+          max-xl:fixed max-xl:top-0 max-xl:right-0 max-xl:h-dvh
           max-xl:bg-primary-dark max-xl:z-50
-          max-xl:grid max-md:grid-rows-[96px_1fr_96px] md:max-xl:grid-rows-[112px_1fr_112px]
+          max-xl:grid max-md:grid-rows-[6rem_1fr_6rem] md:max-xl:grid-rows-[7rem_1fr_7rem]
           max-xl:transition-transform max-xl:duration-300
-          max-sm:w-full sm:max-xl:w-[320px]
-          ${isMenuActive ? "max-xl:translate-x-0" : "max-xl:-translate-x-full"}
+          max-sm:w-full sm:max-md:w-[20rem] md:max-lg:w-93 lg:max-xl:w-133 max-xl:overflow-auto
+          ${isMenuActive ? "max-xl:translate-x-0" : "max-xl:translate-x-full"}
       `}
       >
-        <div className="flex items-center justify-between max-xs:px-4 p-6 md:p-8 z-10 xl:hidden">
+        <div className="flex items-center justify-between max-xs:p-4 xs:max-md:p-6 md:p-8 lg:px-20 z-10 xl:hidden">
           <Logo />
 
           <button
@@ -54,7 +54,7 @@ export default function Navbar({ isMenuActive, setIsMenuActive }: NavbarProps) {
           </button>
         </div>
 
-        <ul className="flex flex-wrap items-center justify-center gap-6 max-xl:flex-col max-xs:p-4 xs:max-xl:p-6">
+        <ul className="flex items-center justify-center gap-6 max-xl:flex-col max-xs:p-4 xs:max-md:p-6 md:max-xl:p-8 lg:max-xl:px-20">
           {MENU_LINKS.map(({ label, href }) => {
             const sectionId = href.replace("#", "");
             const isActive =
