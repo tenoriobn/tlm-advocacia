@@ -36,7 +36,7 @@ export function TestimonialCard({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Ver comentário de ${name} no Google`}
-          className="flex gap-3 items-center w-max"
+          className="flex gap-3 items-center max-w-max"
         >
           <Image
             src={avatar}
@@ -72,7 +72,7 @@ export function TestimonialCard({
         <p
           ref={paragraphRef}
           id={`testimonial-${id}-text`}
-          className="text-lg md:text-xl italic text-secondary-75 whitespace-pre-line line-clamp-3"
+          className="text-lg md:text-xl italic text-secondary-75 whitespace-pre-line line-clamp-3 select-none"
         >
           {testimony}
         </p>

@@ -2,7 +2,7 @@
 @import "swiper/css/pagination";
 
 .mySwiper .swiper-wrapper {
-  margin-bottom: 3rem;
+  cursor: grab;
 }
 
 .mySwiper .swiper-slide {
@@ -13,6 +13,7 @@
   position: relative !important;
   bottom: 0 !important;
   cursor: pointer;
+  margin-top: 3rem;
 }
 
 .mySwiper .swiper-pagination-bullet {
