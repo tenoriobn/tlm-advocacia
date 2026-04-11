@@ -1,3 +1,4 @@
+"use client";
 import SectionEyebrow from "src/components/SectionEyebrow";
 import SectionSubtitle from "src/components/SectionSubtitle";
 import Description from "./Description";
