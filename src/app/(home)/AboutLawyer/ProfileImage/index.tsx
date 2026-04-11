@@ -10,7 +10,7 @@ export default function ProfileImage({ mobile = false }: ProfileImageProps) {
           : "hidden xl:block relative h-full"
       }
     >
-      <div className="absolute top-0 right-0 bottom-0 left-[calc(50%-50vw)] bg-primary rounded-r-sm" />
+      <div className="absolute top-0 right-0 bottom-0 left-[calc(50%-50vw)] 3xl:left-0 bg-primary rounded-r-sm 3xl:rounded-sm" />
 
       <div
         className={

@@ -9,7 +9,7 @@ export default function LegalAdvice() {
       aria-labelledby="legal-advice-title"
       className="bg-secondary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
-      <div className="max-w-[1920px] w-full pt-25 md:pt-32 m-auto">
+      <div className="max-w-480 w-full pt-25 md:pt-32 m-auto">
         <header>
           <SectionEyebrow
             text="Orientações jurídicas"
