@@ -9,7 +9,7 @@ export default function HeroSection() {
       aria-labelledby="titulo-principal"
       className="bg-header bg-cover w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
-      <div className="max-w-[1920px] w-full min-h-dvh pt-24 grid grid-rows-[1fr_auto] m-auto">
+      <div className="max-w-480 w-full min-h-dvh pt-24 grid grid-rows-[1fr_auto] m-auto">
         <header className="flex flex-col justify-center items-center gap-12 lg:gap-18 py-18 md:py-32">
           <div className="grid gap-6 justify-items-center items-center text-center">
             <h1

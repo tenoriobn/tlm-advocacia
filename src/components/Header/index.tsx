@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <header className="bg-primary fixed flex justify-center w-full max-xs:px-4 p-6 md:p-8 z-10 lg:px-20">
       <div
-        className="max-w-[1920px] flex items-center justify-between w-full gap-6 "
+        className="max-w-480 flex items-center justify-between w-full gap-6 "
         ref={headerRef}
       >
         <Logo />

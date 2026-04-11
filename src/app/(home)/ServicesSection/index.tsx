@@ -12,7 +12,7 @@ export default function ServicesSection() {
       aria-describedby="tlm-services-description"
       className="bg-secondary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
-      <div className="max-w-[1920px] w-full pt-25 md:pt-32 m-auto grid justify-items-center lg:grid-cols-2 lg:gap-18">
+      <div className="max-w-480 w-full pt-25 md:pt-32 m-auto grid justify-items-center lg:grid-cols-2 lg:gap-18">
         <div className="flex flex-col max-lg:items-center">
           <SectionEyebrow text="Serviços" className="text-primary-75" />
 

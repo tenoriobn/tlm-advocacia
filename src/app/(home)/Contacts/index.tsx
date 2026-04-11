@@ -12,7 +12,7 @@ export default function Contacts() {
       aria-labelledby="contacts-title"
       className="bg- bg-primary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
-      <div className="max-w-[1920px] w-full py-25 md:py-32 m-auto">
+      <div className="max-w-480 w-full py-25 md:py-32 m-auto">
         <header>
           <SectionEyebrow text="Contatos" className="text-secondary-75" />
 
