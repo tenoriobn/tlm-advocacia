@@ -6,7 +6,7 @@ export default function ArticleTOC({ items }: ArticleTOCProps) {
       aria-labelledby="sumario-titulo"
       className="flex flex-col md:flex-row md:items-stretch items-center gap-6"
     >
-      <div className="p-6 bg-blue min-w-32 min-h-39 max-w-37 max-h-54.5 flex items-center justify-center rounded-sm">
+      <div className="p-6 bg-blue min-w-32 min-h-39 max-w-37 flex items-center justify-center rounded-sm">
         <h2
           id="sumario-titulo"
           className="text-lg md:text-xl text-secondary uppercase"

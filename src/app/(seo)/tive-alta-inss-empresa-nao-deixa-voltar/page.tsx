@@ -8,7 +8,7 @@ import ArticleCard from "src/components/Article/ArticleCard";
 import ArticleListItem from "src/components/Article/ArticleListItem";
 import Contacts from "src/app/(home)/Contacts";
 
-export default function AltaINSS() {
+export default function HighINSS() {
   return (
     <>
       <Header />
@@ -20,8 +20,16 @@ export default function AltaINSS() {
         <article className="w-full">
           <ArticleHero
             eyebrow="Direito Previdenciário"
-            title="Tive alta do INSS, mas a empresa não quer me deixar voltar: o
-                  que fazer?"
+            title={
+              <>
+                Tive alta do INSS, mas a{" "}
+                <br className="hidden md:max-lg:block" />
+                empresa não quer <br className="hidden max-sm:block" /> me{" "}
+                <br className="hidden sm:max-md:block" /> deixar
+                <br className="hidden md:max-lg:block" /> voltar:{" "}
+                <span className="text-nowrap">o que fazer?</span>
+              </>
+            }
             description="Receber alta do INSS deveria significar o retorno ao trabalho,
                   mas em muitos casos a empresa impede essa volta — deixando o
                   trabalhador sem salário e sem benefício, sem saber como agir.

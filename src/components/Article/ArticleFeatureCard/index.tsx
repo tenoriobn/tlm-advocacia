@@ -6,7 +6,7 @@ export default function ArticleFeatureCard({
   description,
 }: ArticleFeatureCardProps) {
   return (
-    <div className="grid gap-3 border-l-3 border-gray bg-gray-light max-xs:p-4 xs:p-6 rounded-sm">
+    <div className="grid grid-rows-subgrid row-span-3 gap-3 border-l-3 border-gray bg-gray-light max-xs:p-4 xs:p-6 rounded-sm">
       <p className="text-red text-sm font-medium uppercase">{eyebrow}</p>
 
       <h3 className="text-gray text-lg md:text-xl font-semibold">{title}</h3>

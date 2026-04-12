@@ -9,7 +9,7 @@ import ArticleListItem from "src/components/Article/ArticleListItem";
 import Contacts from "src/app/(home)/Contacts";
 import ArticleFeatureCard from "src/components/Article/ArticleFeatureCard";
 
-export default function FraudeBancaria() {
+export default function BankFraud() {
   return (
     <>
       <Header />
@@ -21,11 +21,18 @@ export default function FraudeBancaria() {
         <article className="w-full">
           <ArticleHero
             eyebrow="Fraudes Bancárias"
-            title="Fui vítima de fraude bancária: o banco é obrigado a me ressarcir?"
+            // title="Fui vítima de fraude bancária: o banco é obrigado a me ressarcir?"
+            title={
+              <>
+                Fui vítima de fraude bancária:
+                <br className="hidden md:block" /> o banco é obrigado a me
+                ressarcir?
+              </>
+            }
             description="Sofrer uma fraude ou golpe bancário gera prejuízo financeiro, transtorno emocional e, muitas vezes, negativações indevidas no nome da vítima. O que poucos sabem é que, na maioria dos casos, o banco tem responsabilidade — e você tem direito à reparação."
             image={{
               src: "/images/fraude-bancaria.jpg",
-              alt: "Trabalhador preocupado após ser vítma de fraude bancária",
+              alt: "Homem preocupado olhando o notebook enquanto segura cartão bancário após sofrer fraude ou golpe financeiro",
             }}
           />
 
@@ -338,7 +345,7 @@ export default function FraudeBancaria() {
                   O mais importante é não deixar o tempo passar sem tomar
                   providências. A demora pode dificultar a comprovação dos fatos
                   e, em alguns casos, resultar em prescrição do direito à
-                  reparação..
+                  reparação.
                 </ArticleCard>
               </ArticleSection>
 
