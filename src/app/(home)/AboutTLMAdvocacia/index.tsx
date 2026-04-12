@@ -15,7 +15,7 @@ export default function AboutTLMAdvocacia() {
       <div className="max-w-480 w-full pt-25 md:pt-32 m-auto">
         <header>
           <SectionEyebrow
-            text="Sobre a TLM Advocacia"
+            text="Sobre a PSM Advocacia"
             className="text-secondary-75"
           />
 

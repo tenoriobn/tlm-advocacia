@@ -91,7 +91,7 @@
     background-color: var(--color-primary);
     background-image:
       var(--background-image-gradient-primary),
-      url("/images/herosection-bg.png");
+      url("/images/herosection-bg.avif");
   }
 }
 

@@ -4,7 +4,7 @@ import type { CaseCtaLinkProps } from "./caseCtaLink.type";
 
 export default function CaseCtaLink({
   className = "",
-  href = "https://wa.me/5511999403955?text=Preciso%20de%20orienta%C3%A7%C3%A3o%20para%20conduzir%20um%20caso",
+  href = "https://wa.me/5511989400334?text=Preciso%20de%20orienta%C3%A7%C3%A3o%20para%20conduzir%20um%20caso",
   ariaLabel = "Falar sobre o caso",
   onClick,
   tone = "primary",

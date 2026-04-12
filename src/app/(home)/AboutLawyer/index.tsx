@@ -17,7 +17,7 @@ export default function AboutLawyer() {
         <div className="flex flex-col max-xl:items-center">
           <header>
             <SectionEyebrow
-              text="SOBRE THIAGO L. MARTINEZ"
+              text="Sobre Paulo M. Souza"
               className="text-primary-75"
             />
 
