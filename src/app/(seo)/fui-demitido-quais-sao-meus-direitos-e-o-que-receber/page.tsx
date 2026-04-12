@@ -130,7 +130,7 @@ export default function LaborLaw() {
 
               <ArticleSection
                 id="section-2"
-                title="2. O que a empresa é obrigada a pagar na rescisão"
+                title="2. O que a empresa é obrigada a pagar na rescisão?"
               >
                 <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   As verbas rescisórias variam conforme o tipo de demissão, mas
@@ -188,7 +188,7 @@ export default function LaborLaw() {
 
               <ArticleSection
                 id="section-3"
-                title="3. Quando o trabalhador tem direito ao seguro-desemprego"
+                title="3. Quando o trabalhador tem direito ao seguro-desemprego?"
               >
                 <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   O seguro-desemprego é um benefício pago pelo governo ao
@@ -231,7 +231,7 @@ export default function LaborLaw() {
 
               <ArticleSection
                 id="section-4"
-                title="4. O que é demissão indireta e quando ela se aplica"
+                title="4. O que é demissão indireta e quando ela se aplica?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -297,7 +297,7 @@ export default function LaborLaw() {
 
               <ArticleSection
                 id="section-5"
-                title="5. Situações em que a demissão pode ser considerada ilegal"
+                title="5. Situações em que a demissão pode ser considerada ilegal?"
               >
                 <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   Nem toda demissão é válida. A legislação trabalhista
@@ -360,7 +360,7 @@ export default function LaborLaw() {
 
               <ArticleSection
                 id="section-6"
-                title="6. O que fazer antes de assinar a rescisão"
+                title="6. O que fazer antes de assinar a rescisão?"
               >
                 <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   A rescisão é um documento com consequências jurídicas

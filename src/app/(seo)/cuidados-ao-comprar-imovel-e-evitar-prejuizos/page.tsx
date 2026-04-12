@@ -438,7 +438,7 @@ export default function RealEstateLaw() {
 
               <ArticleSection
                 id="section-7"
-                title="7. Como proteger sua compra na prática"
+                title="7. Como proteger sua compra na prática?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>

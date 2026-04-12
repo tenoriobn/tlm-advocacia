@@ -6,10 +6,10 @@ export default function ArticleSection({
   children,
 }: ArticleSectionProps) {
   return (
-    <section id={id} aria-labelledby={`${id}-titulo`}>
+    <section id={id} aria-labelledby={`${id}-title`}>
       <header className="py-6 border-y border-primary-25 mb-6">
         <h2
-          id={`${id}-titulo`}
+          id={`${id}-title`}
           className="font-playfair font-semibold text-xl md:text-2xl text-primary"
         >
           {title}

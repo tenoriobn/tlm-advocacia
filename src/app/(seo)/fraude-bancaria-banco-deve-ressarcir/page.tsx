@@ -21,7 +21,6 @@ export default function BankFraud() {
         <article className="w-full">
           <ArticleHero
             eyebrow="Fraudes Bancárias"
-            // title="Fui vítima de fraude bancária: o banco é obrigado a me ressarcir?"
             title={
               <>
                 Fui vítima de fraude bancária:
@@ -41,38 +40,38 @@ export default function BankFraud() {
               <ArticleTOC
                 items={[
                   {
-                    id: "secao-1",
+                    id: "section-1",
                     label: "Quais os principais tipos de fraudes bancárias?",
                   },
                   {
-                    id: "secao-2",
+                    id: "section-2",
                     label: "O banco tem responsabilidade em casos de fraude?",
                   },
                   {
-                    id: "secao-3",
+                    id: "section-3",
                     label:
                       "É possível ser ressarcido ou indenizado pelo banco?",
                   },
                   {
-                    id: "secao-4",
+                    id: "section-4",
                     label:
                       "O que fazer com negativações indevidas causadas pela fraude?",
                   },
                   {
-                    id: "secao-5",
+                    id: "section-5",
                     label:
                       "Quais providências tomar ao descobrir que foi vítima?",
                   },
                   {
-                    id: "secao-6",
+                    id: "section-6",
                     label: "Como resolver essa situação na prática?",
                   },
                 ]}
               />
 
               <ArticleSection
-                id="secao-1"
-                title="Quais os principais tipos de fraudes bancárias?"
+                id="section-1"
+                title="1. Quais os principais tipos de fraudes bancárias?"
               >
                 <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   As fraudes bancárias evoluem constantemente, mas alguns golpes
@@ -139,8 +138,8 @@ export default function BankFraud() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-2"
-                title="O banco tem responsabilidade em casos de fraude?"
+                id="section-2"
+                title="2. O banco tem responsabilidade em casos de fraude?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -177,8 +176,8 @@ export default function BankFraud() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-3"
-                title="É possível ser ressarcido ou indenizado pelo banco?"
+                id="section-3"
+                title="3. É possível ser ressarcido ou indenizado pelo banco?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -210,8 +209,8 @@ export default function BankFraud() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-4"
-                title="O que fazer com negativações indevidas causadas pela fraude?"
+                id="section-4"
+                title="4. O que fazer com negativações indevidas causadas pela fraude?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -242,8 +241,8 @@ export default function BankFraud() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-5"
-                title="Quais providências tomar ao descobrir que foi vítima?"
+                id="section-5"
+                title="5. Quais providências tomar ao descobrir que foi vítima?"
               >
                 <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   Agir rapidamente ao descobrir uma fraude bancária é
@@ -303,8 +302,8 @@ export default function BankFraud() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-6"
-                title="Como resolver essa situação na prática?"
+                id="section-6"
+                title="6. Como resolver essa situação na prática?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>

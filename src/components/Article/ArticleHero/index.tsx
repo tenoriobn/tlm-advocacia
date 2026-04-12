@@ -17,7 +17,7 @@ export default function ArticleHero({
           </div>
 
           <h1
-            id="titulo-principal"
+            id="main-title"
             className="font-playfair text-secondary font-semibold text-center text-[clamp(1.75rem,7vw,3.125rem)] leading-[112%]"
           >
             {title}

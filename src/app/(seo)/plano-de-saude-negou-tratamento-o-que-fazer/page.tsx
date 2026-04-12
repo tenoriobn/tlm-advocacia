@@ -111,7 +111,7 @@ export default function ConsumerLaw() {
 
               <ArticleSection
                 id="section-2"
-                title="2. Quais procedimentos o plano é obrigado a cobrir"
+                title="2. Quais procedimentos o plano é obrigado a cobrir?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -209,7 +209,7 @@ export default function ConsumerLaw() {
 
               <ArticleSection
                 id="section-4"
-                title="4. O que é carência e quando ela pode ser afastada"
+                title="4. O que é carência e quando ela pode ser afastada?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>

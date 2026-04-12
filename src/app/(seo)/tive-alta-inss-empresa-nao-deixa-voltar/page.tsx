@@ -45,29 +45,29 @@ export default function HighINSS() {
               <ArticleTOC
                 items={[
                   {
-                    id: "secao-1",
+                    id: "section-1",
                     label: "O que acontece após a alta do INSS?",
                   },
                   {
-                    id: "secao-2",
+                    id: "section-2",
                     label: "Por que a empresa pode impedir o retorno?",
                   },
-                  { id: "secao-3", label: "O que é o limbo previdenciário?" },
-                  { id: "secao-4", label: "Quem deve pagar nesse período?" },
+                  { id: "section-3", label: "O que é o limbo previdenciário?" },
+                  { id: "section-4", label: "Quem deve pagar nesse período?" },
                   {
-                    id: "secao-5",
+                    id: "section-5",
                     label: "O que fazer se a empresa não deixa voltar?",
                   },
                   {
-                    id: "secao-6",
+                    id: "section-6",
                     label: "Como resolver essa situação na prática?",
                   },
                 ]}
               />
 
               <ArticleSection
-                id="secao-1"
-                title="O que acontece após a alta do INSS?"
+                id="section-1"
+                title="1. O que acontece após a alta do INSS?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -101,8 +101,8 @@ export default function HighINSS() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-2"
-                title="Por que a empresa pode impedir o retorno ao trabalho?"
+                id="section-2"
+                title="2. Por que a empresa pode impedir o retorno ao trabalho?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -155,8 +155,8 @@ export default function HighINSS() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-3"
-                title="O que é o limbo previdenciário?"
+                id="section-3"
+                title="3. O que é o limbo previdenciário?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -190,8 +190,8 @@ export default function HighINSS() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-4"
-                title="Quem deve pagar nesse período?"
+                id="section-4"
+                title="4. Quem deve pagar nesse período?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
@@ -230,8 +230,8 @@ export default function HighINSS() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-5"
-                title="O que fazer se a empresa não deixa voltar?"
+                id="section-5"
+                title="5. O que fazer se a empresa não deixa voltar?"
               >
                 <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   Diante da negativa da empresa, é fundamental agir com rapidez
@@ -289,8 +289,8 @@ export default function HighINSS() {
               </ArticleSection>
 
               <ArticleSection
-                id="secao-6"
-                title="Como resolver essa situação na prática?"
+                id="section-6"
+                title="6. Como resolver essa situação na prática?"
               >
                 <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
                   <p>
