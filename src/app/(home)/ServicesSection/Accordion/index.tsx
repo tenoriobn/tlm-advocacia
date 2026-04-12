@@ -6,12 +6,13 @@ import { SERVICES } from "./accordionServices";
 
 export default function Accordion() {
   const [openServiceId, setOpenServiceId] = useState<number>(SERVICES[0].id);
-
   const itemRefs = useRef<Record<number, HTMLButtonElement | null>>({});
-
-  useSmoothCenterScroll(openServiceId, itemRefs, 300);
+  const userInteractedRef = useRef(false);
+  useSmoothCenterScroll(openServiceId, itemRefs, userInteractedRef, 300);
 
   const toggleItem = (serviceId: number) => {
+    userInteractedRef.current = true;
+
     setOpenServiceId((currentId) => (currentId === serviceId ? -1 : serviceId));
   };
 

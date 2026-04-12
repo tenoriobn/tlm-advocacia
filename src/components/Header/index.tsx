@@ -1,3 +1,4 @@
+"use client";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import MobileMenuIcon from "public/icons/menu-bars.svg";

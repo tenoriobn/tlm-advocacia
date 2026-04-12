@@ -9,7 +9,7 @@ export default function AdviceCards() {
       </h2>
 
       <ul className="w-full grid md:grid-cols-2 lg:grid-cols-3 grid-rows-[auto_auto_auto]">
-        {ADVICE_CARDS.map(({ title, description, id }) => {
+        {ADVICE_CARDS.map(({ title, description, id, linkArticle }) => {
           const isFirst = id === 1;
           const isLast = id === ADVICE_CARDS.length;
           const isLastTwo = id > ADVICE_CARDS.length - 2;
@@ -50,7 +50,7 @@ export default function AdviceCards() {
               </p>
 
               <Link
-                href="/"
+                href={linkArticle}
                 className={`block px-6 py-4 rounded-sm font-medium text-center text-xl md:text-2xl max-md:w-full md:w-max transition-default active:scale-95 self-start
               ${
                 id === 1

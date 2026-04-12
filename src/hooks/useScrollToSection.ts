@@ -39,6 +39,19 @@ export function useScrollToSection() {
 
       if (pathname !== "/") {
         router.push(`/?section=${sectionId}`);
+
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          if (!el) {
+            return;
+          }
+
+          const targetY =
+            el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+
+          smoothScrollTo(targetY, SCROLL_DURATION);
+        }, 100);
+
         return;
       }
 

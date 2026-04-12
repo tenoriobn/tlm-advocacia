@@ -4,14 +4,13 @@ import { useEffect, useRef } from "react";
 export function useSmoothCenterScroll(
   activeId: number | null,
   itemRefs: RefObject<Record<number, HTMLElement | null>>,
+  userInteractedRef: RefObject<boolean>,
   duration = 300,
 ) {
   const animationFrameRef = useRef<number | null>(null);
-  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
+    if (!userInteractedRef.current) {
       return;
     }
 
@@ -67,5 +66,5 @@ export function useSmoothCenterScroll(
         cancelAnimationFrame(animationFrameRef.current);
       }
     };
-  }, [activeId, itemRefs, duration]);
+  }, [activeId, itemRefs, duration, userInteractedRef]);
 }
