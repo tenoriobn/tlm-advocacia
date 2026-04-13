@@ -1,3 +1,4 @@
+"use client";
 import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 import ArticleHero from "src/components/Article/ArticleHero";
@@ -8,6 +9,7 @@ import ArticleCard from "src/components/Article/ArticleCard";
 import ArticleListItem from "src/components/Article/ArticleListItem";
 import Contacts from "src/app/(home)/Contacts";
 import ArticleFeatureCard from "src/components/Article/ArticleFeatureCard";
+import Reveal from "src/components/Reveal";
 
 export default function LaborLaw() {
   return (
@@ -78,12 +80,14 @@ export default function LaborLaw() {
                 id="section-1"
                 title="1. Quais os tipos de demissão e o que muda em cada caso?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  O tipo de demissão define diretamente quais verbas rescisórias
-                  o trabalhador tem direito a receber. Entender essa diferença é
-                  o primeiro passo para verificar se a rescisão foi calculada
-                  corretamente.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    O tipo de demissão define diretamente quais verbas
+                    rescisórias o trabalhador tem direito a receber. Entender
+                    essa diferença é o primeiro passo para verificar se a
+                    rescisão foi calculada corretamente.
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem label="1" title="Demissão sem justa causa:">
@@ -132,12 +136,14 @@ export default function LaborLaw() {
                 id="section-2"
                 title="2. O que a empresa é obrigada a pagar na rescisão?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  As verbas rescisórias variam conforme o tipo de demissão, mas
-                  há um conjunto de direitos que se aplica à maioria das
-                  situações de desligamento. Confira o que deve constar no seu
-                  acerto.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    As verbas rescisórias variam conforme o tipo de demissão,
+                    mas há um conjunto de direitos que se aplica à maioria das
+                    situações de desligamento. Confira o que deve constar no seu
+                    acerto.
+                  </p>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -190,13 +196,15 @@ export default function LaborLaw() {
                 id="section-3"
                 title="3. Quando o trabalhador tem direito ao seguro-desemprego?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  O seguro-desemprego é um benefício pago pelo governo ao
-                  trabalhador demitido sem justa causa, destinado a garantir
-                  renda durante o período de recolocação. Para ter direito, é
-                  preciso atender alguns requisitos mínimos estabelecidos em
-                  lei.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    O seguro-desemprego é um benefício pago pelo governo ao
+                    trabalhador demitido sem justa causa, destinado a garantir
+                    renda durante o período de recolocação. Para ter direito, é
+                    preciso atender alguns requisitos mínimos estabelecidos em
+                    lei.
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem label="1" title="Primeiro pedido:">
@@ -215,12 +223,14 @@ export default function LaborLaw() {
                   </ArticleListItem>
                 </ul>
 
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  Além dos requisitos de tempo, o trabalhador não pode ter outra
-                  fonte de renda suficiente para sustentar a si e a família, nem
-                  estar recebendo outro benefício previdenciário — com exceção
-                  do auxílio-acidente e da pensão por morte.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    Além dos requisitos de tempo, o trabalhador não pode ter
+                    outra fonte de renda suficiente para sustentar a si e a
+                    família, nem estar recebendo outro benefício previdenciário
+                    — com exceção do auxílio-acidente e da pensão por morte.
+                  </p>
+                </Reveal>
 
                 <ArticleCard variant="yellow">
                   O prazo para solicitar o seguro-desemprego vai do 7º ao 120º
@@ -299,14 +309,16 @@ export default function LaborLaw() {
                 id="section-5"
                 title="5. Situações em que a demissão pode ser considerada ilegal?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  Nem toda demissão é válida. A legislação trabalhista
-                  brasileira prevê uma série de situações em que o trabalhador
-                  possui estabilidade no emprego — ou seja, a empresa não pode
-                  dispensá-lo, e caso o faça, a demissão pode ser anulada ou o
-                  trabalhador tem direito a indenização equivalente ao período
-                  de estabilidade.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    Nem toda demissão é válida. A legislação trabalhista
+                    brasileira prevê uma série de situações em que o trabalhador
+                    possui estabilidade no emprego — ou seja, a empresa não pode
+                    dispensá-lo, e caso o faça, a demissão pode ser anulada ou o
+                    trabalhador tem direito a indenização equivalente ao período
+                    de estabilidade.
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem
@@ -362,12 +374,14 @@ export default function LaborLaw() {
                 id="section-6"
                 title="6. O que fazer antes de assinar a rescisão?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  A rescisão é um documento com consequências jurídicas
-                  importantes. Assinar sem verificar o conteúdo pode significar
-                  abrir mão de valores que você tem direito a receber. Siga
-                  estes passos antes de qualquer assinatura.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    A rescisão é um documento com consequências jurídicas
+                    importantes. Assinar sem verificar o conteúdo pode
+                    significar abrir mão de valores que você tem direito a
+                    receber. Siga estes passos antes de qualquer assinatura.
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem

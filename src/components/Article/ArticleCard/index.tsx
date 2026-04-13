@@ -1,3 +1,4 @@
+import Reveal from "src/components/Reveal";
 import type { ArticleCardProps } from "./articleCard.type";
 
 const styles = {
@@ -9,8 +10,10 @@ const styles = {
 
 export default function ArticleCard({ variant, children }: ArticleCardProps) {
   return (
-    <aside className={`${styles[variant]} max-xs:p-4 xs:p-6 rounded-sm`}>
-      <p className="text-lg md:text-xl">{children}</p>
-    </aside>
+    <Reveal animation="fade-up" delayClass="delay-250">
+      <aside className={`${styles[variant]} max-xs:p-4 xs:p-6 rounded-sm`}>
+        <p className="text-lg md:text-xl">{children}</p>
+      </aside>
+    </Reveal>
   );
 }
