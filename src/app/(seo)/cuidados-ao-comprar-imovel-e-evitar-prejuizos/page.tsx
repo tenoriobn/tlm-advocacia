@@ -516,6 +516,7 @@ export default function RealEstateLaw() {
                     <br />o melhor caminho para proteger seu patrimônio.
                   </>
                 }
+                href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20conte%C3%BAdo%20sobre%20compra%20de%20im%C3%B3vel%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20evitar%20problemas%20e%20preju%C3%ADzos."
               />
             </div>
           </div>

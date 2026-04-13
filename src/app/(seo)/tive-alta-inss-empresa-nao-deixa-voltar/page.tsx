@@ -359,6 +359,7 @@ export default function HighINSS() {
               <ArticleCTA
                 title="Está enfrentando essa situação e não sabe por onde começar?"
                 description="Uma análise do seu caso pode ajudar a identificar o melhor caminho para garantir seus direitos sem perder tempo."
+                href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20conte%C3%BAdo%20sobre%20alta%20do%20INSS%20e%20empresa%20que%20n%C3%A3o%20permite%20o%20retorno%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20sobre%20meu%20caso."
               />
             </div>
           </div>

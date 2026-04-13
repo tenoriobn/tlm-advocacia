@@ -4,7 +4,7 @@ import type { ArticleCTAProps } from "./articleCTA.type";
 import Reveal from "src/components/Reveal";
 
 const whatsappHref =
-  "https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20TLM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras.";
+  "https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20PSM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras.";
 
 export default function ArticleCTA({
   title,
