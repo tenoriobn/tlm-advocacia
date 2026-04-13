@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SOCIAL_LINK } from "./socialLink";
 import Link from "next/link";
 import LogoIcon from "public/icons/logo.svg";
@@ -7,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20">
       <div className="max-w-480 w-full m-auto border-t border-secondary-25 py-6 grid gap-6 items-center justify-items-center md:grid-cols-2 xl:flex xl:justify-between">
-        <address className="flex items-center gap-2 md:justify-self-start xl:w-52.5 not-italic">
+        <address className="flex items-center gap-2 md:justify-self-start xl:w-57.5 not-italic">
           {/* <Image
             src="/icons/logo.png"
             alt="Logotipo da PSM Advocacia"
@@ -25,7 +24,7 @@ export default function Footer() {
 
         <nav
           aria-label="Redes sociais da PSM Advocacia"
-          className="flex gap-4 md:justify-self-end xl:w-52.5 lg:justify-end xl:order-2"
+          className="flex gap-4 md:justify-self-end xl:w-57.5 lg:justify-end xl:order-2"
         >
           {SOCIAL_LINK.map(({ icon: Icon, href, ariaLabel }) => (
             <Link

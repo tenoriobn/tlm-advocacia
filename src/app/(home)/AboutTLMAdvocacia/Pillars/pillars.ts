@@ -14,6 +14,7 @@ export const pillars = [
     description:
       "Ser referência em atendimento jurídico personalizado, com agilidade, transparência e confiança.",
     Icon: EyeIcon,
+    delayClass: "delay-200",
   },
   {
     title: "Valores",
@@ -23,5 +24,6 @@ export const pillars = [
     itemClassName:
       "md:max-lg:col-span-2 md:w-full md:max-w-md md:justify-self-center lg:max-w-none",
     iconClassName: "text-primary stroke-[2.5] w-6 h-6",
+    delayClass: "delay-300",
   },
 ];

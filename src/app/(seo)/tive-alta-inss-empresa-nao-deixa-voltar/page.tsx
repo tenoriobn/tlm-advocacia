@@ -1,3 +1,4 @@
+"use client";
 import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 import ArticleHero from "src/components/Article/ArticleHero";
@@ -7,12 +8,12 @@ import ArticleSection from "src/components/Article/ArticleSection";
 import ArticleCard from "src/components/Article/ArticleCard";
 import ArticleListItem from "src/components/Article/ArticleListItem";
 import Contacts from "src/app/(home)/Contacts";
+import Reveal from "src/components/Reveal";
 
 export default function HighINSS() {
   return (
     <>
       <Header />
-
       <main
         id="conteudo-principal"
         className="bg-secondary flex flex-1 flex-col items-center justify-between w-full"
@@ -52,8 +53,14 @@ export default function HighINSS() {
                     id: "section-2",
                     label: "Por que a empresa pode impedir o retorno?",
                   },
-                  { id: "section-3", label: "O que é o limbo previdenciário?" },
-                  { id: "section-4", label: "Quem deve pagar nesse período?" },
+                  {
+                    id: "section-3",
+                    label: "O que é o limbo previdenciário?",
+                  },
+                  {
+                    id: "section-4",
+                    label: "Quem deve pagar nesse período?",
+                  },
                   {
                     id: "section-5",
                     label: "O que fazer se a empresa não deixa voltar?",
