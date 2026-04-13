@@ -1,19 +1,22 @@
 import Image from "next/image";
 import { SOCIAL_LINK } from "./socialLink";
 import Link from "next/link";
+import LogoIcon from "public/icons/logo.svg";
 
 export default function Footer() {
   return (
     <footer className="bg-primary w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20">
       <div className="max-w-480 w-full m-auto border-t border-secondary-25 py-6 grid gap-6 items-center justify-items-center md:grid-cols-2 xl:flex xl:justify-between">
         <address className="flex items-center gap-2 md:justify-self-start xl:w-52.5 not-italic">
-          <Image
+          {/* <Image
             src="/icons/logo.png"
             alt="Logotipo da PSM Advocacia"
             width={25}
             height={36}
             className="w-6.25 h-9"
-          />
+          /> */}
+
+          <LogoIcon />
 
           <p className="text-secondary text-lg md:text-xl font-medium">
             OAB/SP nº 999.999
