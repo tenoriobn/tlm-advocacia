@@ -19,6 +19,7 @@ export default function HomePage() {
         role="main"
         className="flex flex-1 flex-col items-center justify-between w-full"
       >
+        <div id="header-sentinel" className="h-px w-full" />
         <HeroSection />
         <AboutTLMAdvocacia />
         <AboutLawyer />

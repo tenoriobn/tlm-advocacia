@@ -11,7 +11,7 @@ export default function Description() {
         evitar prejuízos e tomar decisões mais seguras.
       </p>
       <p>
-        A TLM Advocacia atua na análise e condução dessas situações, buscando
+        A PSM Advocacia atua na análise e condução dessas situações, buscando
         soluções adequadas para cada tipo de demanda, com foco em prevenir
         riscos e resolver conflitos de forma eficiente.
       </p>

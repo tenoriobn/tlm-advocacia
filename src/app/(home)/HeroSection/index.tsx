@@ -7,7 +7,7 @@ export default function HeroSection() {
     <section
       id="inicio"
       aria-labelledby="titulo-principal"
-      className="bg-header bg-cover w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
+      className="bg-header bg-cover bg-top w-full max-xs:px-4 max-md:px-6 md:px-8 lg:px-20"
     >
       <div className="max-w-480 w-full min-h-dvh pt-24 grid grid-rows-[1fr_auto] m-auto">
         <header className="flex flex-col justify-center items-center gap-12 lg:gap-18 py-18 md:py-32">
@@ -31,7 +31,7 @@ export default function HeroSection() {
           </div>
 
           <Link
-            href="https://wa.me/5511999403955?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20TLM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras."
+            href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20TLM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras."
             target="_blank"
             rel="noopener noreferrer"
             className="bg-secondary text-primary text-xl md:text-2xl font-medium rounded-sm px-6 py-4 flex items-center justify-center gap-3 max-sm:w-full sm:max-w-max transition-default hover:bg-secondary-75 active:bg-secondary-50 active:scale-90"
@@ -47,11 +47,12 @@ export default function HeroSection() {
           className="flex shrink-0 justify-center items-center gap-3 md:gap-6 border-t border-b border-white/12 py-6"
         >
           <Image
-            src="/images/foto-perfil-advogado.png"
-            alt="Foto do advogado Thiago Lopes Martinez"
+            src="/images/avatar-advogado.avif"
+            alt="Foto de perfil do advogado Paulo M. Souza"
             width={64}
             height={64}
-            className="bg-primary-dark rounded-full object-contain w-16 h-16 scale-x-[-1]"
+            unoptimized
+            className="bg-primary-dark rounded-full object-cover opacity-85 w-16 h-16"
           />
 
           <div>
@@ -60,7 +61,7 @@ export default function HeroSection() {
             </h2>
 
             <p className="text-lg md:text-2xl font-medium text-secondary">
-              OAB/SP nº 253.048
+              OAB/SP nº 999.999
               <span className="hidden md:inline"> — registro ativo</span>
             </p>
 

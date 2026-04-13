@@ -26,7 +26,7 @@ export default function ServicesSection() {
           <Description />
 
           <CaseCtaLink
-            href="https://wa.me/5511999403955?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20jur%C3%ADdico%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20para%20agir%20com%20seguran%C3%A7a%20e%20evitar%20preju%C3%ADzos."
+            href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20jur%C3%ADdico%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20para%20agir%20com%20seguran%C3%A7a%20e%20evitar%20preju%C3%ADzos."
             className="hidden max-sm:w-full sm:w-max lg:flex"
           />
         </div>
@@ -34,7 +34,7 @@ export default function ServicesSection() {
         <Accordion />
 
         <CaseCtaLink
-          href="https://wa.me/5511999403955?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20TLM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras."
+          href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20TLM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras."
           className="flex max-sm:w-full sm:w-max lg:hidden mt-12"
         />
       </div>

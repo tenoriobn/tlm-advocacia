@@ -5,7 +5,7 @@ export default function Description() {
       className="space-y-4 text-lg md:text-xl text-secondary-75 max-lg:text-center lg:flex-1 min-w-0"
     >
       <p>
-        A TLM Advocacia atua desde 2016 oferecendo assessoria jurídica focada na
+        A PSM Advocacia atua desde 2000 oferecendo assessoria jurídica focada na
         solução de problemas reais.
       </p>
       <p>

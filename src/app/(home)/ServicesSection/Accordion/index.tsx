@@ -22,7 +22,7 @@ export default function Accordion() {
         const isOpen = openServiceId === id;
         const buttonId = `service-accordion-button-${id}`;
         const panelId = `service-accordion-panel-${id}`;
-        const whatsappHref = `https://wa.me/5511999403955?text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappHref = `https://wa.me/5511989400334?text=${encodeURIComponent(whatsappMessage)}`;
 
         return (
           <li

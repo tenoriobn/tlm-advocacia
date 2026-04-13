@@ -20,11 +20,12 @@ export default function ProfileImage({ mobile = false }: ProfileImageProps) {
         }
       >
         <Image
-          alt="Foto de perfil do advogado Thiago L. Martinez"
-          src="/images/foto-perfil-advogado.png"
+          alt="Foto de perfil do advogado Paulo L. Martinez"
+          src="/images/foto-perfil-advogado.avif"
           fill
-          sizes={mobile ? "100vw" : "(min-width: 1280px) 45vw, 0px"}
-          className="object-contain object-bottom"
+          sizes="(max-width: 768px) 90vw, 600px"
+          className="object-contain object-bottom max-xs:pt-4 xs:pt-6"
+          priority
         />
       </div>
     </figure>
