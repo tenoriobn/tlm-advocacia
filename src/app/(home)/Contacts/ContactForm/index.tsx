@@ -11,6 +11,7 @@ import PaperAirplaneIcon from "public/icons/paper-airplane.svg";
 import LoadingIcon from "public/icons/loading.svg";
 import { CASE_TYPE_OPTIONS } from "./caseTypeOptions";
 import { useContactForm } from "./useContactForm";
+import Reveal from "src/components/Reveal";
 
 export default function ContactForm() {
   const { data, errors, handleChange, handleSubmit, isSubmitting } =
@@ -33,6 +34,7 @@ export default function ContactForm() {
         onChange={(e) => handleChange("name", e.target.value)}
         error={errors.name}
         disabled={isSubmitting}
+        delayClass="delay-100"
       />
 
       <InputField
@@ -43,6 +45,7 @@ export default function ContactForm() {
         onChange={(e) => handleChange("email", e.target.value)}
         error={errors.email}
         disabled={isSubmitting}
+        delayClass="delay-150"
       />
 
       <InputField
@@ -52,6 +55,7 @@ export default function ContactForm() {
         onChange={(e) => handleChange("phone", e.target.value)}
         error={errors.phone}
         disabled={isSubmitting}
+        delayClass="delay-200"
       />
 
       <DropdownField
@@ -62,6 +66,7 @@ export default function ContactForm() {
         value={data.caseType}
         error={errors.caseType}
         isSubmitting={isSubmitting}
+        delayClass="delay-250"
       />
 
       <TextareaField
@@ -71,12 +76,14 @@ export default function ContactForm() {
         onChange={(e) => handleChange("message", e.target.value)}
         error={errors.message}
         disabled={isSubmitting}
+        delayClass="delay-300"
       />
 
-      <button
-        disabled={isSubmitting}
-        type="submit"
-        className={`
+      <Reveal animation="fade-up" delayClass="delay-350">
+        <button
+          disabled={isSubmitting}
+          type="submit"
+          className={`
           justify-self-end bg-secondary text-primary text-xl md:text-2xl font-medium rounded-sm max-xs:p-4 xs:px-6 xs:py-4 flex items-center justify-center gap-3 max-sm:w-full sm:max-w-max transition-default 
           ${
             isSubmitting
@@ -84,18 +91,19 @@ export default function ContactForm() {
               : "cursor-pointer hover:bg-secondary-75 active:bg-secondary-50 active:scale-90 focus-visible:border-2"
           }
         `}
-      >
-        {isSubmitting ? (
-          <LoadingIcon
-            className="w-6 h-6"
-            aria-hidden="true"
-            focusable="false"
-          />
-        ) : (
-          <PaperAirplaneIcon aria-hidden="true" focusable="false" />
-        )}
-        <span>{isSubmitting ? "Enviando Mensagem" : "Enviar Mensagem"}</span>
-      </button>
+        >
+          {isSubmitting ? (
+            <LoadingIcon
+              className="w-6 h-6"
+              aria-hidden="true"
+              focusable="false"
+            />
+          ) : (
+            <PaperAirplaneIcon aria-hidden="true" focusable="false" />
+          )}
+          <span>{isSubmitting ? "Enviando Mensagem" : "Enviar Mensagem"}</span>
+        </button>
+      </Reveal>
     </form>
   );
 }

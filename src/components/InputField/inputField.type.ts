@@ -1,8 +1,9 @@
 import type { InputHTMLAttributes } from "react";
 
-type BaseProps = {
+type InputBaseProps = {
   icon: React.ReactNode;
   error?: string;
+  delayClass?: string;
 };
 
-export type InputProps = BaseProps & InputHTMLAttributes<HTMLInputElement>;
+export type InputProps = InputBaseProps & InputHTMLAttributes<HTMLInputElement>;

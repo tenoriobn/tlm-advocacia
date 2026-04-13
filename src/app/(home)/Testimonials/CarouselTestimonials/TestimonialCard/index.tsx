@@ -38,13 +38,15 @@ export function TestimonialCard({
           aria-label={`Ver comentário de ${name} no Google`}
           className="flex gap-3 items-center max-w-max"
         >
-          <Image
-            src={avatar}
-            alt={`Foto de ${name}`}
-            width={36}
-            height={36}
-            className="w-9 h-9 object-cover rounded-full"
-          />
+          <div className="relative w-9 h-9">
+            <Image
+              src={avatar}
+              alt={`Foto de ${name}`}
+              fill
+              sizes="36px"
+              className="object-cover rounded-full"
+            />
+          </div>
           <h3
             id={`testimonial-${id}-name`}
             className="text-xl md:text-2xl font-medium text-secondary flex items-center gap-2 min-w-0"

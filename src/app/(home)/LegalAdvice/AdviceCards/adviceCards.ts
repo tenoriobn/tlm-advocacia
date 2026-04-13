@@ -5,6 +5,7 @@ export const ADVICE_CARDS = [
     description:
       "Dificuldades com aposentadoria, auxílio ou benefício negado? Veja como agir e garantir seus direitos previdenciários.",
     linkArticle: "/tive-alta-inss-empresa-nao-deixa-voltar",
+    delayClass: "delay-100",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const ADVICE_CARDS = [
     description:
       "Caiu em golpe ou teve valores indevidos na conta? Entenda como agir rapidamente para reduzir prejuízos.",
     linkArticle: "/fraude-bancaria-banco-deve-ressarcir",
+    delayClass: "delay-200",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const ADVICE_CARDS = [
     description:
       "Teve exame, cirurgia ou tratamento negado? Saiba quando a negativa é abusiva e o que fazer.",
     linkArticle: "/plano-de-saude-negou-tratamento-o-que-fazer",
+    delayClass: "delay-300",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const ADVICE_CARDS = [
     description:
       "Foi demitido ou tem dúvidas sobre seus direitos? Veja o que pode ser cobrado e como agir.",
     linkArticle: "/fui-demitido-quais-sao-meus-direitos-e-o-que-receber",
+    delayClass: "delay-400",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const ADVICE_CARDS = [
     description:
       "Comprou ou vai comprar um imóvel? Entenda os cuidados para evitar riscos e prejuízos.",
     linkArticle: "/cuidados-ao-comprar-imovel-e-evitar-prejuizos",
+    delayClass: "delay-500",
   },
   {
     id: 6,
@@ -40,5 +45,6 @@ export const ADVICE_CARDS = [
     description:
       "Está passando por separação ou questões familiares? Saiba como agir com segurança nesses casos.",
     linkArticle: "/divorcio-guarda-dos-filhos-e-pensao-alimenticia-o-que-saber",
+    delayClass: "delay-600",
   },
 ] as const;

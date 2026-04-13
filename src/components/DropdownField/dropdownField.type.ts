@@ -11,4 +11,5 @@ export type DropdownFieldProps = {
   value?: string;
   error?: string;
   isSubmitting?: boolean;
+  delayClass?: string;
 };
