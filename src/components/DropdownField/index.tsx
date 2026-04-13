@@ -36,7 +36,7 @@ export function DropdownField({
 
   return (
     <Reveal animation="fade-up" delayClass={delayClass}>
-      <div className="grid gap-2">
+      <div className="grid gap-2 z-1">
         <div ref={dropdownFieldRef} className="relative">
           <button
             disabled={isSubmitting}
