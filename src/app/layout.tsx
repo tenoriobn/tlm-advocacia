@@ -39,27 +39,43 @@ export const metadata: Metadata = {
   creator: "PSM Advocacia",
   publisher: "PSM Advocacia",
 
-  metadataBase: new URL("https://www.tlmadvocacia.com.br"),
+  // metadataBase: new URL("https://www.tlmadvocacia.com.br"),
 
   alternates: {
     canonical: "/",
+    languages: {
+      "pt-BR": "/",
+    },
   },
 
   openGraph: {
     title: "Advogado em São Paulo | PSM Advocacia",
     description:
       "Fale com um advogado e receba orientação jurídica clara e segura. Atendimento em todo o Brasil.",
-    url: "https://www.tlmadvocacia.com.br",
+    // url: "https://www.tlmadvocacia.com.br",
     siteName: "PSM Advocacia",
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "PSM Advocacia - Assessoria Jurídica",
+      },
+    ],
   },
-
   twitter: {
     card: "summary_large_image",
     title: "Advogado em São Paulo | PSM Advocacia",
     description:
       "Assessoria jurídica com atendimento direto. Entenda seus direitos e saiba como agir.",
+    images: ["/images/og-image.jpg"],
+  },
+  icons: {
+    icon: "/icons/favicon.png",
+    shortcut: "/icons/favicon.png",
+    apple: "/icons/favicon.png",
   },
 
   robots: {
