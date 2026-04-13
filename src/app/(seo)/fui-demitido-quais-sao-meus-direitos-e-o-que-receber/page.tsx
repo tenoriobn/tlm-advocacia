@@ -492,6 +492,7 @@ export default function LaborLaw() {
                     indicam o que pode ser cobrado.
                   </>
                 }
+                href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20conte%C3%BAdo%20sobre%20demiss%C3%A3o%20e%20direitos%20trabalhistas%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20entender%20o%20que%20tenho%20direito%20a%20receber."
               />
             </div>
           </div>

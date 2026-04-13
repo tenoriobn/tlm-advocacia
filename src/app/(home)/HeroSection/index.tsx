@@ -37,7 +37,7 @@ export default function HeroSection() {
 
           <Reveal animation="fade-up" delayClass="delay-300">
             <Link
-              href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20TLM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras."
+              href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20vi%20o%20site%20da%20PSM%20e%20quero%20orienta%C3%A7%C3%A3o%20jur%C3%ADdica%20para%20defender%20meus%20interesses%20e%20tomar%20decis%C3%B5es%20seguras."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-secondary text-primary text-xl md:text-2xl font-medium rounded-sm px-6 py-4 flex items-center justify-center gap-3 max-sm:w-full sm:max-w-max transition-default hover:bg-secondary-75 active:bg-secondary-50 active:scale-90"

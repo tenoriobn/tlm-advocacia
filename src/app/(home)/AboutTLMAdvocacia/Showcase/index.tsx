@@ -33,7 +33,7 @@ export default function Showcase() {
 
           <div className="absolute inset-0 flex items-end justify-center">
             <Link
-              href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20jur%C3%ADdico%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o.%20A%20TLM%20pode%20me%20ajudar%3F"
+              href="https://wa.me/5511989400334?text=Ol%C3%A1%2C%20estou%20com%20um%20problema%20jur%C3%ADdico%20e%20gostaria%20de%20orienta%C3%A7%C3%A3o.%20A%20PSM%20pode%20me%20ajudar%3F"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary w-full transition-default hover:bg-neutral-600 active:bg-neutral-500 "
