@@ -54,11 +54,14 @@ export default function AdviceCards() {
                   <Link
                     href={linkArticle}
                     className={`block px-6 py-4 rounded-sm font-medium text-center text-xl md:text-2xl max-md:w-full md:w-max transition-default active:scale-95 self-start
-              ${
-                id === 1
-                  ? "bg-secondary text-primary hover:bg-secondary-75 active:bg-secondary-50"
-                  : "bg-primary text-secondary hover:bg-primary-75 active:bg-primary-50"
-              }`}
+                      ${
+                        id === 1
+                          ? "bg-secondary text-primary hover:bg-secondary-75 active:bg-secondary-50"
+                          : "bg-primary text-secondary hover:bg-primary-75 active:bg-primary-50"
+                      }
+                    `}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={`Saiba mais sobre ${title}`}
                   >
                     Saber mais
