@@ -1,3 +1,4 @@
+"use client";
 import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 import ArticleHero from "src/components/Article/ArticleHero";
@@ -8,6 +9,7 @@ import ArticleCard from "src/components/Article/ArticleCard";
 import ArticleListItem from "src/components/Article/ArticleListItem";
 import Contacts from "src/app/(home)/Contacts";
 import ArticleFeatureCard from "src/components/Article/ArticleFeatureCard";
+import Reveal from "src/components/Reveal";
 
 export default function BankFraud() {
   return (
@@ -73,12 +75,15 @@ export default function BankFraud() {
                 id="section-1"
                 title="1. Quais os principais tipos de fraudes bancárias?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  As fraudes bancárias evoluem constantemente, mas alguns golpes
-                  são recorrentes e afetam milhares de consumidores todos os
-                  anos. Conhecê-los é o primeiro passo para se proteger — e para
-                  entender seus direitos caso já tenha sido vítima.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    As fraudes bancárias evoluem constantemente, mas alguns
+                    golpes são recorrentes e afetam milhares de consumidores
+                    todos os anos. Conhecê-los é o primeiro passo para se
+                    proteger — e para entender seus direitos caso já tenha sido
+                    vítima.
+                  </p>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -141,31 +146,35 @@ export default function BankFraud() {
                 id="section-2"
                 title="2. O banco tem responsabilidade em casos de fraude?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    Sim. Os bancos são responsáveis pelos riscos inerentes à sua
-                    própria atividade. Isso significa que eles têm a obrigação
-                    legal de oferecer serviços seguros, proteger os dados dos
-                    clientes e adotar mecanismos capazes de identificar e
-                    bloquear transações suspeitas — especialmente aquelas que
-                    fogem ao perfil habitual do consumidor.
-                  </p>
-                  <p>
-                    Essa responsabilidade está expressamente prevista no Código
-                    de Defesa do Consumidor, que classifica os bancos como
-                    fornecedores de serviço e os obriga a responder pelos danos
-                    causados a seus clientes, independentemente de culpa.
-                    Trata-se da chamada responsabilidade objetiva.
-                  </p>
-                  <p>
-                    Na prática, isso significa que, ao alegar que &quot;o
-                    cliente forneceu os dados voluntariamente&quot; ou que
-                    &quot;não houve falha nos sistemas&quot;, o banco não está
-                    automaticamente isento. A Justiça analisa o contexto — e, na
-                    maioria dos casos, entende que cabia ao banco detectar a
-                    irregularidade antes que o prejuízo ocorresse.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      Sim. Os bancos são responsáveis pelos riscos inerentes à
+                      sua própria atividade. Isso significa que eles têm a
+                      obrigação legal de oferecer serviços seguros, proteger os
+                      dados dos clientes e adotar mecanismos capazes de
+                      identificar e bloquear transações suspeitas —
+                      especialmente aquelas que fogem ao perfil habitual do
+                      consumidor.
+                    </p>
+                    <p>
+                      Essa responsabilidade está expressamente prevista
+                      no Código de Defesa do Consumidor, que classifica os
+                      bancos como fornecedores de serviço e os obriga a
+                      responder pelos danos causados a seus clientes,
+                      independentemente de culpa. Trata-se da chamada
+                      responsabilidade objetiva.
+                    </p>
+                    <p>
+                      Na prática, isso significa que, ao alegar que &quot;o
+                      cliente forneceu os dados voluntariamente&quot; ou que
+                      &quot;não houve falha nos sistemas&quot;, o banco não está
+                      automaticamente isento. A Justiça analisa o contexto — e,
+                      na maioria dos casos, entende que cabia ao banco detectar
+                      a irregularidade antes que o prejuízo ocorresse.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ArticleCard variant="yellow">
                   Mesmo que você tenha, de alguma forma, facilitado o golpe ao
@@ -179,27 +188,30 @@ export default function BankFraud() {
                 id="section-3"
                 title="3. É possível ser ressarcido ou indenizado pelo banco?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    Sim. Na grande maioria dos casos levados à Justiça, os
-                    bancos são condenados a restituir os valores perdidos pela
-                    vítima e, dependendo das circunstâncias, a pagar
-                    também indenização por danos morais.
-                  </p>
-                  <p>
-                    Os danos morais são cabíveis quando a fraude gerou situações
-                    como negativações indevidas no CPF da vítima, cobranças
-                    abusivas, inclusão em cadastros de inadimplentes, abalo de
-                    crédito ou outros transtornos comprovados.
-                  </p>
-                  <p>
-                    O valor das indenizações varia conforme a gravidade do caso,
-                    o impacto na vida da vítima e o comportamento do banco após
-                    o comunicado da fraude. Casos em que o banco ignora o
-                    problema ou demora a agir costumam resultar em condenações
-                    mais expressivas.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      Sim. Na grande maioria dos casos levados à Justiça, os
+                      bancos são condenados a restituir os valores perdidos pela
+                      vítima e, dependendo das circunstâncias, a pagar
+                      também indenização por danos morais.
+                    </p>
+                    <p>
+                      Os danos morais são cabíveis quando a fraude gerou
+                      situações como negativações indevidas no CPF da vítima,
+                      cobranças abusivas, inclusão em cadastros de
+                      inadimplentes, abalo de crédito ou outros transtornos
+                      comprovados.
+                    </p>
+                    <p>
+                      O valor das indenizações varia conforme a gravidade do
+                      caso, o impacto na vida da vítima e o comportamento do
+                      banco após o comunicado da fraude. Casos em que o banco
+                      ignora o problema ou demora a agir costumam resultar em
+                      condenações mais expressivas.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ArticleCard variant="green">
                   A reparação não se limita ao valor perdido no golpe.
@@ -212,26 +224,30 @@ export default function BankFraud() {
                 id="section-4"
                 title="4. O que fazer com negativações indevidas causadas pela fraude?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    Um dos efeitos mais danosos das fraudes bancárias —
-                    especialmente as que envolvem abertura fraudulenta de contas
-                    ou contratação de crédito no nome da vítima — é a
-                    negativação indevida em órgãos como Serasa e SPC.
-                  </p>
-                  <p>
-                    Nesses casos, é possível solicitar ao juiz uma liminar, que
-                    é uma decisão judicial antecipada, obtida no início do
-                    processo, determinando a retirada imediata do nome da vítima
-                    dos cadastros de inadimplentes enquanto o caso é analisado.
-                  </p>
-                  <p>
-                    Essa medida é frequentemente concedida com rapidez,
-                    especialmente quando há indícios claros de fraude. Isso
-                    significa que, mesmo antes do fim do processo, você pode ter
-                    seu nome limpo e voltar a ter acesso ao crédito normalmente.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      Um dos efeitos mais danosos das fraudes bancárias —
+                      especialmente as que envolvem abertura fraudulenta de
+                      contas ou contratação de crédito no nome da vítima — é a
+                      negativação indevida em órgãos como Serasa e SPC.
+                    </p>
+                    <p>
+                      Nesses casos, é possível solicitar ao juiz uma liminar,
+                      que é uma decisão judicial antecipada, obtida no início do
+                      processo, determinando a retirada imediata do nome da
+                      vítima dos cadastros de inadimplentes enquanto o caso é
+                      analisado.
+                    </p>
+                    <p>
+                      Essa medida é frequentemente concedida com rapidez,
+                      especialmente quando há indícios claros de fraude. Isso
+                      significa que, mesmo antes do fim do processo, você pode
+                      ter seu nome limpo e voltar a ter acesso ao crédito
+                      normalmente.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ArticleCard variant="yellow">
                   Não espere o processo terminar para tirar seu nome do Serasa.
@@ -244,11 +260,13 @@ export default function BankFraud() {
                 id="section-5"
                 title="5. Quais providências tomar ao descobrir que foi vítima?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  Agir rapidamente ao descobrir uma fraude bancária é
-                  fundamental para preservar provas, minimizar prejuízos e
-                  fortalecer qualquer ação futura. Siga estes passos:
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    Agir rapidamente ao descobrir uma fraude bancária é
+                    fundamental para preservar provas, minimizar prejuízos e
+                    fortalecer qualquer ação futura. Siga estes passos:
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem
@@ -305,40 +323,43 @@ export default function BankFraud() {
                 id="section-6"
                 title="6. Como resolver essa situação na prática?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    A resolução de um caso de fraude bancária pode seguir
-                    diferentes caminhos, dependendo da gravidade do prejuízo, do
-                    comportamento do banco e das provas disponíveis.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Resolução extrajudicial:
-                    </span>{" "}
-                    em alguns casos, a atuação de um advogado junto ao banco —
-                    por meio de notificações formais e negociação direta — já é
-                    suficiente para obter o ressarcimento dos valores sem a
-                    necessidade de processo judicial. Esse caminho é mais rápido
-                    quando o banco reconhece a fraude.
-                  </p>
-                  <p>
-                    <span className="font-medium">Ação judicial:</span> quando o
-                    banco nega responsabilidade ou ignora o pedido de reparação,
-                    o caminho é ingressar na Justiça. Ações dessa natureza
-                    costumam ser propostas nos Juizados Especiais Cíveis ou na
-                    Vara Cível, dependendo dos valores envolvidos. O banco,
-                    nesse caso, é citado a se defender e, na maioria das vezes,
-                    acaba condenado a ressarcir o prejuízo e pagar danos morais.
-                  </p>
-                  <p>
-                    <span className="font-medium">Medidas emergenciais:</span>{" "}
-                    em paralelo, é possível solicitar liminares para suspender
-                    cobranças indevidas, bloquear negativações e até suspender
-                    descontos em folha decorrentes de contratos fraudulentos —
-                    medidas que protegem o consumidor enquanto o processo
-                    tramita
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      A resolução de um caso de fraude bancária pode seguir
+                      diferentes caminhos, dependendo da gravidade do prejuízo,
+                      do comportamento do banco e das provas disponíveis.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Resolução extrajudicial:
+                      </span>{" "}
+                      em alguns casos, a atuação de um advogado junto ao banco —
+                      por meio de notificações formais e negociação direta — já
+                      é suficiente para obter o ressarcimento dos valores sem a
+                      necessidade de processo judicial. Esse caminho é mais
+                      rápido quando o banco reconhece a fraude.
+                    </p>
+                    <p>
+                      <span className="font-medium">Ação judicial:</span> quando
+                      o banco nega responsabilidade ou ignora o pedido de
+                      reparação, o caminho é ingressar na Justiça. Ações dessa
+                      natureza costumam ser propostas nos Juizados Especiais
+                      Cíveis ou na Vara Cível, dependendo dos valores
+                      envolvidos. O banco, nesse caso, é citado a se defender e,
+                      na maioria das vezes, acaba condenado a ressarcir o
+                      prejuízo e pagar danos morais.
+                    </p>
+                    <p>
+                      <span className="font-medium">Medidas emergenciais:</span>{" "}
+                      em paralelo, é possível solicitar liminares para suspender
+                      cobranças indevidas, bloquear negativações e até suspender
+                      descontos em folha decorrentes de contratos fraudulentos —
+                      medidas que protegem o consumidor enquanto o processo
+                      tramita
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ArticleCard variant="green">
                   O mais importante é não deixar o tempo passar sem tomar

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   creator: "PSM Advocacia",
   publisher: "PSM Advocacia",
 
-  // metadataBase: new URL("https://www.tlmadvocacia.com.br"),
+  metadataBase: new URL("https://tlm-advocacia.vercel.app"),
 
   alternates: {
     canonical: "/",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Advogado em São Paulo | PSM Advocacia",
     description:
       "Fale com um advogado e receba orientação jurídica clara e segura. Atendimento em todo o Brasil.",
-    // url: "https://www.tlmadvocacia.com.br",
+    url: "https://tlm-advocacia.vercel.app",
     siteName: "PSM Advocacia",
     locale: "pt_BR",
     type: "website",

@@ -1,3 +1,4 @@
+"use client";
 import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 import ArticleHero from "src/components/Article/ArticleHero";
@@ -8,6 +9,7 @@ import ArticleCard from "src/components/Article/ArticleCard";
 import ArticleListItem from "src/components/Article/ArticleListItem";
 import Contacts from "src/app/(home)/Contacts";
 import ArticleFeatureCard from "src/components/Article/ArticleFeatureCard";
+import Reveal from "src/components/Reveal";
 
 export default function RealEstateLaw() {
   return (
@@ -77,12 +79,15 @@ export default function RealEstateLaw() {
                 id="section-1"
                 title="1. Quais os principais riscos na compra de um imóvel?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  A compra de um imóvel envolve uma cadeia longa de documentos,
-                  partes e obrigações — e em qualquer elo dessa cadeia pode
-                  surgir um problema que comprometa toda a transação. Conhecer
-                  os riscos mais comuns é o primeiro passo para se proteger.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    A compra de um imóvel envolve uma cadeia longa de
+                    documentos, partes e obrigações — e em qualquer elo dessa
+                    cadeia pode surgir um problema que comprometa toda a
+                    transação. Conhecer os riscos mais comuns é o primeiro passo
+                    para se proteger.
+                  </p>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -134,13 +139,15 @@ export default function RealEstateLaw() {
                 id="section-2"
                 title="2. Quais documentos verificar antes de fechar negócio?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  A diligência documental — conhecida no meio jurídico como due
-                  diligence imobiliária — é o conjunto de verificações que deve
-                  ser feito antes de qualquer assinatura. Ela protege o
-                  comprador de surpresas que podem custar muito mais do que o
-                  próprio imóvel.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    A diligência documental — conhecida no meio jurídico como
+                    due diligence imobiliária — é o conjunto de verificações que
+                    deve ser feito antes de qualquer assinatura. Ela protege o
+                    comprador de surpresas que podem custar muito mais do que o
+                    próprio imóvel.
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem
@@ -208,12 +215,15 @@ export default function RealEstateLaw() {
                 id="section-3"
                 title="3. O que analisar no contrato de compra e venda?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  O contrato de compra e venda é o documento que regula os
-                  direitos e obrigações de ambas as partes — e é exatamente nele
-                  que surgem as maiores armadilhas para o comprador desatento.
-                  Alguns pontos merecem atenção especial antes da assinatura.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    O contrato de compra e venda é o documento que regula os
+                    direitos e obrigações de ambas as partes — e é exatamente
+                    nele que surgem as maiores armadilhas para o comprador
+                    desatento. Alguns pontos merecem atenção especial antes da
+                    assinatura.
+                  </p>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -265,22 +275,24 @@ export default function RealEstateLaw() {
                 id="section-4"
                 title="4. Compra na planta: direitos e riscos específicos?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    A compra de imóvel na planta tem dinâmica própria e
-                    concentra riscos que não existem em transações de imóveis
-                    prontos. O comprador paga por algo que ainda não existe — e
-                    fica sujeito ao cumprimento de obrigações por parte da
-                    construtora por anos.
-                  </p>
-                  <p>
-                    A boa notícia é que a legislação brasileira protege esse
-                    comprador de forma expressiva. A Lei nº 4.591/1964, o Código
-                    de Defesa do Consumidor e a Lei nº 13.786/2018 (Lei do
-                    Distrato) estabelecem regras claras que as construtoras são
-                    obrigadas a cumprir.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      A compra de imóvel na planta tem dinâmica própria e
+                      concentra riscos que não existem em transações de imóveis
+                      prontos. O comprador paga por algo que ainda não existe —
+                      e fica sujeito ao cumprimento de obrigações por parte da
+                      construtora por anos.
+                    </p>
+                    <p>
+                      A boa notícia é que a legislação brasileira protege esse
+                      comprador de forma expressiva. A Lei nº 4.591/1964, o
+                      Código de Defesa do Consumidor e a Lei nº 13.786/2018 (Lei
+                      do Distrato) estabelecem regras claras que as construtoras
+                      são obrigadas a cumprir.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem label="1" title="Atraso na entrega:">
@@ -326,13 +338,15 @@ export default function RealEstateLaw() {
                 id="section-5"
                 title="5. O que fazer quando o imóvel tem problema após a compra?"
               >
-                <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  Descobrir um problema no imóvel depois que o contrato foi
-                  assinado e o pagamento realizado é uma situação que gera
-                  angústia — mas nem sempre significa prejuízo inevitável. A lei
-                  protege o comprador em diversas situações, mesmo após a
-                  conclusão do negócio.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    Descobrir um problema no imóvel depois que o contrato foi
+                    assinado e o pagamento realizado é uma situação que gera
+                    angústia — mas nem sempre significa prejuízo inevitável. A
+                    lei protege o comprador em diversas situações, mesmo após a
+                    conclusão do negócio.
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem
@@ -390,43 +404,45 @@ export default function RealEstateLaw() {
                 id="section-6"
                 title="6. Quando o vendedor ou a construtora podem ser responsabilizados?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    A responsabilidade do vendedor e da construtora vai além do
-                    momento da assinatura do contrato. A lei estabelece
-                    obrigações que se estendem por anos após a conclusão do
-                    negócio — e o comprador que conhece esses prazos está em
-                    posição muito mais forte para buscar reparação.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Responsabilidade do vendedor por evicção:
-                    </span>{" "}
-                    se o comprador perder o imóvel — total ou parcialmente — por
-                    decisão judicial decorrente de um direito anterior que o
-                    vendedor omitiu, tem direito à devolução do preço pago,
-                    acrescido de indenização por perdas e danos.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Responsabilidade por vícios redibitórios:
-                    </span>{" "}
-                    defeitos ocultos que tornam o imóvel impróprio para uso ou
-                    que reduzem seu valor podem ser cobrados do vendedor no
-                    prazo de um ano para imóveis usados e de até cinco anos para
-                    imóveis novos. O comprador pode exigir o abatimento do
-                    preço, o reparo do defeito ou a rescisão do contrato.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Responsabilidade da construtora:
-                    </span>{" "}
-                    além das garantias legais, construtoras respondem pelos
-                    vícios da obra independentemente de culpa — a chamada
-                    responsabilidade objetiva pelo fato do produto, prevista no
-                    Código de Defesa do Consumidor.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      A responsabilidade do vendedor e da construtora vai além
+                      do momento da assinatura do contrato. A lei estabelece
+                      obrigações que se estendem por anos após a conclusão do
+                      negócio — e o comprador que conhece esses prazos está em
+                      posição muito mais forte para buscar reparação.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Responsabilidade do vendedor por evicção:
+                      </span>{" "}
+                      se o comprador perder o imóvel — total ou parcialmente —
+                      por decisão judicial decorrente de um direito anterior que
+                      o vendedor omitiu, tem direito à devolução do preço pago,
+                      acrescido de indenização por perdas e danos.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Responsabilidade por vícios redibitórios:
+                      </span>{" "}
+                      defeitos ocultos que tornam o imóvel impróprio para uso ou
+                      que reduzem seu valor podem ser cobrados do vendedor no
+                      prazo de um ano para imóveis usados e de até cinco anos
+                      para imóveis novos. O comprador pode exigir o abatimento
+                      do preço, o reparo do defeito ou a rescisão do contrato.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Responsabilidade da construtora:
+                      </span>{" "}
+                      além das garantias legais, construtoras respondem pelos
+                      vícios da obra independentemente de culpa — a chamada
+                      responsabilidade objetiva pelo fato do produto, prevista
+                      no Código de Defesa do Consumidor.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ArticleCard variant="green">
                   Os prazos para responsabilizar vendedor ou construtora variam
@@ -440,42 +456,44 @@ export default function RealEstateLaw() {
                 id="section-7"
                 title="7. Como proteger sua compra na prática?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    A proteção jurídica na compra de um imóvel começa muito
-                    antes da assinatura do contrato — e pode continuar sendo
-                    necessária por anos após a conclusão do negócio. Há dois
-                    momentos distintos em que a atuação de um advogado faz
-                    diferença real.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Antes da compra — prevenção:
-                    </span>{" "}
-                    a análise prévia da documentação do imóvel e do vendedor, a
-                    revisão do contrato e a orientação sobre os riscos
-                    específicos da transação são os serviços que mais evitam
-                    problemas. Resolver uma pendência antes da assinatura custa
-                    uma fração do que custa resolver um litígio depois.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Após a compra — resolução:
-                    </span>{" "}
-                    quando o problema já ocorreu — seja atraso de obra, defeito
-                    no imóvel, dívida oculta ou contrato abusivo — o caminho
-                    jurídico pode incluir notificação extrajudicial para
-                    resolução rápida, ação de indenização por perdas e danos,
-                    revisão ou rescisão contratual com devolução de valores, e
-                    medidas liminares para suspender cobranças indevidas ou
-                    preservar o bem.
-                  </p>
-                  <p>
-                    Em ambos os casos, agir com orientação especializada é o que
-                    separa quem resolve a situação de quem convive com o
-                    problema por anos sem saber por onde começar.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      A proteção jurídica na compra de um imóvel começa muito
+                      antes da assinatura do contrato — e pode continuar sendo
+                      necessária por anos após a conclusão do negócio. Há dois
+                      momentos distintos em que a atuação de um advogado faz
+                      diferença real.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Antes da compra — prevenção:
+                      </span>{" "}
+                      a análise prévia da documentação do imóvel e do vendedor,
+                      a revisão do contrato e a orientação sobre os riscos
+                      específicos da transação são os serviços que mais evitam
+                      problemas. Resolver uma pendência antes da assinatura
+                      custa uma fração do que custa resolver um litígio depois.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Após a compra — resolução:
+                      </span>{" "}
+                      quando o problema já ocorreu — seja atraso de obra,
+                      defeito no imóvel, dívida oculta ou contrato abusivo — o
+                      caminho jurídico pode incluir notificação extrajudicial
+                      para resolução rápida, ação de indenização por perdas e
+                      danos, revisão ou rescisão contratual com devolução de
+                      valores, e medidas liminares para suspender cobranças
+                      indevidas ou preservar o bem.
+                    </p>
+                    <p>
+                      Em ambos os casos, agir com orientação especializada é o
+                      que separa quem resolve a situação de quem convive com o
+                      problema por anos sem saber por onde começar.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ArticleCard variant="green">
                   Os prazos para responsabilizar vendedor ou construtora variam

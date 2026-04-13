@@ -1,3 +1,4 @@
+"use client";
 import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 import ArticleHero from "src/components/Article/ArticleHero";
@@ -8,6 +9,7 @@ import ArticleCard from "src/components/Article/ArticleCard";
 import ArticleListItem from "src/components/Article/ArticleListItem";
 import Contacts from "src/app/(home)/Contacts";
 import ArticleFeatureCard from "src/components/Article/ArticleFeatureCard";
+import Reveal from "src/components/Reveal";
 
 export default function FamilyLaw() {
   return (
@@ -82,14 +84,16 @@ export default function FamilyLaw() {
                 id="section-1"
                 title="1. Quais os tipos de demissão e o que muda em cada caso?"
               >
-                <p className="text-lg md:text-xl text-primary-75 mb-4">
-                  Desde a Emenda Constitucional nº 66/2010, o divórcio no Brasil
-                  pode ser requerido a qualquer momento, sem necessidade de
-                  prazo mínimo de separação e sem precisar apresentar motivos.
-                  Essa mudança simplificou o processo, mas as modalidades ainda
-                  impactam diretamente o tempo, o custo e a forma de resolver as
-                  questões envolvidas.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 mb-4">
+                    Desde a Emenda Constitucional nº 66/2010, o divórcio no
+                    Brasil pode ser requerido a qualquer momento, sem
+                    necessidade de prazo mínimo de separação e sem precisar
+                    apresentar motivos. Essa mudança simplificou o processo, mas
+                    as modalidades ainda impactam diretamente o tempo, o custo e
+                    a forma de resolver as questões envolvidas.
+                  </p>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -111,14 +115,16 @@ export default function FamilyLaw() {
                   />
                 </div>
 
-                <p className="text-lg md:text-xl text-primary-75 mb-4">
-                  Quando há filhos menores ou incapazes, o divórcio
-                  obrigatoriamente passa pelo Judiciário, pois o juiz precisa
-                  homologar as decisões sobre guarda e alimentos para garantir a
-                  proteção das crianças. Mesmo no divórcio consensual com
-                  filhos, a presença de advogado é obrigatória para ambas as
-                  partes.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 mb-4">
+                    Quando há filhos menores ou incapazes, o divórcio
+                    obrigatoriamente passa pelo Judiciário, pois o juiz precisa
+                    homologar as decisões sobre guarda e alimentos para garantir
+                    a proteção das crianças. Mesmo no divórcio consensual com
+                    filhos, a presença de advogado é obrigatória para ambas as
+                    partes.
+                  </p>
+                </Reveal>
 
                 <ArticleCard variant="yellow">
                   Acordos feitos &quot;de boca&quot; ou sem formalização
@@ -132,13 +138,15 @@ export default function FamilyLaw() {
                 id="section-2"
                 title="2. Como funciona a divisão de bens no divórcio?"
               >
-                <p className="text-lg md:text-xl text-primary-75 mb-4">
-                  A divisão do patrimônio no divórcio segue o regime de bens
-                  escolhido no momento do casamento — e esse detalhe muda
-                  completamente o que cada cônjuge tem direito a receber.
-                  Conhecer o regime do seu casamento é o primeiro passo para
-                  entender o que lhe pertence.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 mb-4">
+                    A divisão do patrimônio no divórcio segue o regime de bens
+                    escolhido no momento do casamento — e esse detalhe muda
+                    completamente o que cada cônjuge tem direito a receber.
+                    Conhecer o regime do seu casamento é o primeiro passo para
+                    entender o que lhe pertence.
+                  </p>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -190,13 +198,16 @@ export default function FamilyLaw() {
                 id="section-3"
                 title="3. Guarda dos filhos: tipos, direitos e o que o juiz considera?"
               >
-                <p className="text-lg md:text-xl text-primary-75 mb-4">
-                  A guarda dos filhos é, na maioria das vezes, o tema mais
-                  sensível do divórcio — e o que mais impacta a vida das
-                  crianças a longo prazo. A legislação brasileira prioriza
-                  sempre o melhor interesse do menor, e o sistema de guarda
-                  evoluiu muito nos últimos anos para refletir essa prioridade.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 mb-4">
+                    A guarda dos filhos é, na maioria das vezes, o tema mais
+                    sensível do divórcio — e o que mais impacta a vida das
+                    crianças a longo prazo. A legislação brasileira prioriza
+                    sempre o melhor interesse do menor, e o sistema de guarda
+                    evoluiu muito nos últimos anos para refletir essa
+                    prioridade.
+                  </p>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem label="1" title="Guarda compartilhada:">
@@ -223,13 +234,15 @@ export default function FamilyLaw() {
                   </ArticleListItem>
                 </ul>
 
-                <p className="text-lg md:text-xl text-primary-75 mb-4">
-                  O direito de visita do genitor que não detém a guarda
-                  principal é garantido por lei e deve ser respeitado. Impedir o
-                  contato da criança com o outro pai ou mãe sem justificativa
-                  legítima configura alienação parental — assunto tratado na
-                  seção seguinte.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 mb-4">
+                    O direito de visita do genitor que não detém a guarda
+                    principal é garantido por lei e deve ser respeitado. Impedir
+                    o contato da criança com o outro pai ou mãe sem
+                    justificativa legítima configura alienação parental —
+                    assunto tratado na seção seguinte.
+                  </p>
+                </Reveal>
 
                 <ArticleCard variant="yellow">
                   Guarda compartilhada não significa necessariamente que a
@@ -243,23 +256,25 @@ export default function FamilyLaw() {
                 id="section-4"
                 title="4. Pensão alimentícia: quem tem direito, quanto e por quanto tempo?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    A pensão alimentícia é uma obrigação legal destinada a
-                    garantir o sustento de quem não tem condições de prover o
-                    próprio sustento — seja um filho menor, seja o cônjuge que
-                    ficou em situação de vulnerabilidade após a separação.
-                  </p>
-                  <p>
-                    O valor da pensão é definido com base no binômio necessidade
-                    de quem recebe e possibilidade de quem paga. Não existe um
-                    percentual fixo estabelecido em lei, mas a jurisprudência
-                    costuma adotar como parâmetro inicial entre 20% e 30% dos
-                    rendimentos líquidos do alimentante para um filho, podendo
-                    variar conforme o número de dependentes e as circunstâncias
-                    do caso.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      A pensão alimentícia é uma obrigação legal destinada a
+                      garantir o sustento de quem não tem condições de prover o
+                      próprio sustento — seja um filho menor, seja o cônjuge que
+                      ficou em situação de vulnerabilidade após a separação.
+                    </p>
+                    <p>
+                      O valor da pensão é definido com base no
+                      binômio necessidade de quem recebe e possibilidade de quem
+                      paga. Não existe um percentual fixo estabelecido em lei,
+                      mas a jurisprudência costuma adotar como parâmetro inicial
+                      entre 20% e 30% dos rendimentos líquidos do alimentante
+                      para um filho, podendo variar conforme o número de
+                      dependentes e as circunstâncias do caso.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -299,21 +314,23 @@ export default function FamilyLaw() {
                 id="section-5"
                 title="5. O que é alienação parental e como se defender?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    A alienação parental ocorre quando um dos genitores — ou
-                    qualquer pessoa que tenha o menor sob sua guarda — age para
-                    prejudicar, dificultar ou destruir o vínculo afetivo da
-                    criança com o outro genitor. É uma forma de abuso emocional
-                    reconhecida por lei no Brasil desde 2010, com consequências
-                    jurídicas graves.
-                  </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      A alienação parental ocorre quando um dos genitores — ou
+                      qualquer pessoa que tenha o menor sob sua guarda — age
+                      para prejudicar, dificultar ou destruir o vínculo afetivo
+                      da criança com o outro genitor. É uma forma de abuso
+                      emocional reconhecida por lei no Brasil desde 2010, com
+                      consequências jurídicas graves.
+                    </p>
 
-                  <p>
-                    Os comportamentos mais comuns que configuram alienação
-                    parental incluem:
-                  </p>
-                </div>
+                    <p>
+                      Os comportamentos mais comuns que configuram alienação
+                      parental incluem:
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ul className="grid gap-4 mb-4">
                   <ArticleListItem
@@ -348,13 +365,15 @@ export default function FamilyLaw() {
                   </ArticleListItem>
                 </ul>
 
-                <p className="text-lg md:text-xl text-primary-75 mb-4">
-                  Quando identificada, a alienação parental pode resultar em
-                  advertência ao alienador, multa, alteração da guarda para o
-                  genitor prejudicado e, em casos graves, suspensão da
-                  autoridade parental. A documentação de cada episódio é
-                  fundamental para comprovar o padrão de comportamento.
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 mb-4">
+                    Quando identificada, a alienação parental pode resultar em
+                    advertência ao alienador, multa, alteração da guarda para o
+                    genitor prejudicado e, em casos graves, suspensão da
+                    autoridade parental. A documentação de cada episódio é
+                    fundamental para comprovar o padrão de comportamento.
+                  </p>
+                </Reveal>
 
                 <ArticleCard variant="green">
                   Se você está sendo impedido de ter contato com seu filho ou
@@ -369,15 +388,17 @@ export default function FamilyLaw() {
                 id="section-6"
                 title="6. Quando é possível revisar guarda ou pensão já definidas?"
               >
-                <p className="text-lg md:text-xl text-primary-75 mb-4">
-                  Uma decisão sobre guarda ou alimentos não é definitiva para
-                  sempre. A lei prevê expressamente a possibilidade de revisão
-                  sempre que houver mudança relevante nas circunstâncias que
-                  fundamentaram a decisão original — o chamado{" "}
-                  <span className="font-semibold whitespace-nowrap">
-                    fato superveniente.
-                  </span>
-                </p>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <p className="text-lg md:text-xl text-primary-75 mb-4">
+                    Uma decisão sobre guarda ou alimentos não é definitiva para
+                    sempre. A lei prevê expressamente a possibilidade de revisão
+                    sempre que houver mudança relevante nas circunstâncias que
+                    fundamentaram a decisão original — o chamado{" "}
+                    <span className="font-semibold whitespace-nowrap">
+                      fato superveniente.
+                    </span>
+                  </p>
+                </Reveal>
 
                 <div className="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,336px),1fr))] mb-4">
                   <ArticleFeatureCard
@@ -418,44 +439,47 @@ export default function FamilyLaw() {
                 id="section-7"
                 title="7. Como conduzir esse processo com segurança na prática?"
               >
-                <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
-                  <p>
-                    Questões de família envolvem, ao mesmo tempo, direitos
-                    patrimoniais relevantes e vínculos emocionais profundos —
-                    uma combinação que torna o processo ainda mais delicado e
-                    exige uma abordagem jurídica equilibrada.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Quando há acordo entre as partes:
-                    </span>{" "}
-                    mesmo quando o divórcio é consensual e as partes chegaram a
-                    um entendimento, é fundamental que cada um tenha seu próprio
-                    advogado para revisar o que está sendo assinado. Acordos mal
-                    redigidos ou incompletos criam brechas que geram litígios
-                    futuros — especialmente sobre guarda e alimentos.
-                  </p>
-                  <p>
-                    <span className="font-medium">Quando não há acordo:</span> o
-                    divórcio litigioso exige uma estratégia jurídica bem
-                    definida desde o início. Provas de patrimônio, registros de
-                    convivência com os filhos, documentação de gastos e
-                    histórico de renda são elementos que precisam ser reunidos
-                    antes mesmo de ingressar com a ação.
-                  </p>
-                  <p>
-                    <span className="font-medium">
-                      Medidas urgentes disponíveis:
-                    </span>{" "}
-                    em situações de risco — seja para a integridade dos filhos,
-                    seja para a preservação do patrimônio —, é possível requerer
-                    ao juiz medidas liminares que incluem bloqueio de bens para
-                    evitar dilapidação do patrimônio, regulamentação provisória
-                    de visitas e guarda, fixação de alimentos provisórios com
-                    pagamento imediato, e afastamento do lar em casos de
-                    violência doméstica.
-                  </p>
-                </div>
+                <Reveal animation="fade-up" delayClass="delay-150">
+                  <div className="text-lg md:text-xl text-primary-75 grid gap-4 mb-4">
+                    <p>
+                      Questões de família envolvem, ao mesmo tempo, direitos
+                      patrimoniais relevantes e vínculos emocionais profundos —
+                      uma combinação que torna o processo ainda mais delicado e
+                      exige uma abordagem jurídica equilibrada.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Quando há acordo entre as partes:
+                      </span>{" "}
+                      mesmo quando o divórcio é consensual e as partes chegaram
+                      a um entendimento, é fundamental que cada um tenha seu
+                      próprio advogado para revisar o que está sendo assinado.
+                      Acordos mal redigidos ou incompletos criam brechas que
+                      geram litígios futuros — especialmente sobre guarda e
+                      alimentos.
+                    </p>
+                    <p>
+                      <span className="font-medium">Quando não há acordo:</span>{" "}
+                      o divórcio litigioso exige uma estratégia jurídica bem
+                      definida desde o início. Provas de patrimônio, registros
+                      de convivência com os filhos, documentação de gastos e
+                      histórico de renda são elementos que precisam ser reunidos
+                      antes mesmo de ingressar com a ação.
+                    </p>
+                    <p>
+                      <span className="font-medium">
+                        Medidas urgentes disponíveis:
+                      </span>{" "}
+                      em situações de risco — seja para a integridade dos
+                      filhos, seja para a preservação do patrimônio —, é
+                      possível requerer ao juiz medidas liminares que incluem
+                      bloqueio de bens para evitar dilapidação do patrimônio,
+                      regulamentação provisória de visitas e guarda, fixação de
+                      alimentos provisórios com pagamento imediato, e
+                      afastamento do lar em casos de violência doméstica.
+                    </p>
+                  </div>
+                </Reveal>
 
                 <ArticleCard variant="green">
                   A separação não precisa ser um processo destruidor. Com

@@ -29,6 +29,8 @@ export default function ContactForm() {
 
       <InputField
         icon={<UserIcon />}
+        name="name"
+        autoComplete="name"
         placeholder="Nome"
         value={data.name}
         onChange={(e) => handleChange("name", e.target.value)}
@@ -39,6 +41,8 @@ export default function ContactForm() {
 
       <InputField
         icon={<EmailIcon />}
+        name="email"
+        autoComplete="email"
         placeholder="Email"
         type="email"
         value={data.email}
@@ -50,6 +54,8 @@ export default function ContactForm() {
 
       <InputField
         icon={<PhoneIcon />}
+        name="phone"
+        autoComplete="tel"
         placeholder="Telefone"
         value={data.phone}
         onChange={(e) => handleChange("phone", e.target.value)}
@@ -71,6 +77,7 @@ export default function ContactForm() {
 
       <TextareaField
         icon={<MessageIcon />}
+        name="message"
         placeholder="Digite sua mensagem"
         value={data.message}
         onChange={(e) => handleChange("message", e.target.value)}
